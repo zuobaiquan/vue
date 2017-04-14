@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<meta charset="utf-8" />
-	<script type="text/javascript" src="lib/vue.js"></script>
-	<script type="text/javascript">
-		window.onload=function(){
-			var vm = new Vue({
-				el: "#box",
-				data:{
+<title></title>
+<meta charset="utf-8" />
+<script type="text/javascript" src="lib/vue.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        var vm = new Vue({
+            el: "#box",
+            data:{
 
-				}
-				methods:{
-					show:function(){
-						alert("12");
-					}
-				}
-			})
-		}
-	</script>
+            },
+            methods:{
+                show:function(e){
+                    console.log(e.target);
+                    alert("12");
+                }
+            }
+        })
+    }
+</script>
 </head>
 <body>
 <div id="box">
-<input type="button" value="按钮" v-on:click="show()">
+<!-- 完整语法 -->
+<input type="button" value="按钮1" v-on:click="show">
+<!-- 缩写 -->
+<input type="button" value="按钮2" @click="show">
 </div>
 </body>
 </html>
