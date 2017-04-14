@@ -2,13 +2,17 @@
 <html>
 <head>
 	<title></title>
+	<meta charset="utf-8" />
 	<script type="text/javascript" src="lib/vue.js"></script>
 	<script type="text/javascript">
 		window.onload=function(){
 			var vm = new Vue({
 				el: "#box",
 				data:{
-					msg:'zuobaiquan'
+					//数据
+					msg:'zuobaiquan',
+					arr:['apple','pear','orange','banaba'],
+					json:{a:'apple',b:'pear',c:'orange',d:'banaba'}
 				}
 			})
 		}
@@ -17,6 +21,18 @@
 <body>
 <div id="box">
 {{msg}}
+双向数据绑定：<input type="text" name="username" v-model="msg">
+<br />
+<ul>
+	取出索引<li v-for="value in arr">{{$index}}====={{value}}</li>
+</ul>
+<ul>
+	取出索引和键值<li v-for="value in json">{{$index}}====={{$key}}===={{value}}</li>
+</ul>
+<ul>
+	<li v-for="(key,value) in json">{{value}}====={{key}}</li>
+</ul>
+{{arr}}
 </div>
 </body>
 </html>
