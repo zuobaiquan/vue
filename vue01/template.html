@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../lib/vue.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            var vm = new Vue({
+                el: "#box",
+                data:{
+                    msg:'zuobaiquan',
+                    msg2:'<p><i>zuobaiquan</i></p>'
+                },
+            })
+        }
+    </script>
+</head>
+<body>
+<div id="box">
+    <input type="text" v-model="msg">  <br />
+    数据更新模板变化{{msg}}              <br />
+    数据只绑定一次：{{*msg}}             <br />
+    <!--只渲染元素和组件一次。随后的重新渲染,元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。-->
+    HTML转义输出{{{msg2}}}              <br />
+    对比：{{msg2}}
+</div>
+</body>
+</html>
