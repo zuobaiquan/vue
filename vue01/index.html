@@ -3,17 +3,18 @@
 <head>
 	<title></title>
 	<meta charset="utf-8" />
-	<script type="text/javascript" src="lib/vue.js"></script>
+	<script type="text/javascript" src="../lib/vue.js"></script>
 	<script type="text/javascript">
 		window.onload=function(){
 			var vm = new Vue({
 				el: "#box",
 				data:{
 					//数据
-					msg:'zuobaiquan',
+					msg:'name',
+                    is_show:true,
 					arr:['apple','pear','orange','banaba'],
 					json:{a:'apple',b:'pear',c:'orange',d:'banaba'}
-				}
+				},
 			})
 		}
 	</script>
@@ -23,6 +24,8 @@
 {{msg}}
 双向数据绑定：<input type="text" name="username" v-model="msg">
 <br />
+    <input type="button" value="toggle" v-on:click="is_show=!is_show">{{is_show}}
+    <div style="background: red;height:50px;width:50px;" v-show="is_show" ></div>
 <ul>
 	取出索引<li v-for="value in arr">{{$index}}====={{value}}</li>
 </ul>

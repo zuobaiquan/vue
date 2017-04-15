@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+</head>
+<body>
+<div class="container" id="box">
+    <form role="form">
+        <div class="form-group">
+            <label for="username">用户名:</label>
+            <input type="text" id="username" v-model="name" class="form-control" placeholder="输入用户名">
+        </div>
+        <div class="form-group">
+            <label for="content">留言内容:</label>
+            <textarea name="content" id="content" v-model="content" class="form-control" placeholder="输入留言内容"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="button" value="添加" class="btn btn-primary" v-on:click="add()">
+            <input type="reset" value="重置" class="btn btn-danger">
+        </div>
+    </form>
+    <hr>
+    <table class="table table-bordered table-hover">
+        <caption class="h2 text-info">留言板</caption>
+        <tr class="text-danger">
+            <th class="text-center">序号</th>
+            <th class="text-center">名字</th>
+            <th class="text-center">留言内容</th>
+            <th class="text-center">操作</th>
+        </tr>
+        <tr class="text-center" v-for="item in mesData">
+            <td>{{$index+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.content}}</td>
+            <td>
+                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" v-on:click="nowIndex=$index">删除</button>
+            </td>
+        </tr>
+        <tr v-show="mesData.length!=0">
+            <td colspan="4" class="text-right">
+                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal" v-on:click="nowIndex=-2">删除全部</button>
+            </td>
+        </tr>
+        <tr v-show="mesData.length==0">
+            <td colspan="4" class="text-center text-muted">
+                <p>暂无数据....</p>
+            </td>
+        </tr>
+    </table>
+    <!--模态框 弹出框-->
+    <div role="dialog" class="modal fade bs-example-modal-sm" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <h4 class="modal-title">确认删除么?</h4>
+                </div>
+                <div class="modal-body text-right">
+                    <input type="button" data-dismiss="modal" value="删除" v-on:click="remove(nowIndex)" class="btn btn-primary">
+                    <input type="button" data-dismiss="modal"  value="取消" class="btn btn-danger">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../lib/jquery.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../lib/vue.js"></script>
+<script>
+    window.onload=function() {
+        new Vue({
+            el:'#box',
+            data:{
+                mesData:[],
+                name:'',
+                content:'',
+                nowIndex:-1,
+            },
+            methods:{
+                add:function(){
+                    this.mesData.push({
+                        name:this.name,content:this.content
+                    })
+                    this.name='';
+                    this.content=''
+                },
+                remove:function(id){
+                    if(id==-2){
+                        this.mesData=[];
+                    }
+                    this.mesData.splice(id,1);
+                }
+
+            }
+
+        });
+    }
+</script>
+</html>

@@ -3,18 +3,20 @@
 <head>
 <title></title>
 <meta charset="utf-8" />
-<script type="text/javascript" src="lib/vue.js"></script>
+<script type="text/javascript" src="../lib/vue.js"></script>
 <script type="text/javascript">
     window.onload=function(){
         var vm = new Vue({
             el: "#box",
             data:{
-
+                count:0,
+                arr:['orange','apple','pear']
             },
             methods:{
                 show:function(e){
-                    console.log(e.target);
-                    alert("12");
+                    console.log(e.target.tagName);
+                    //this在方法里指当前 Vue 实例
+                    this.arr.push('fruit');//vm.arr.push('fruit');
                 }
             }
         })
@@ -23,10 +25,19 @@
 </head>
 <body>
 <div id="box">
-<!-- 完整语法 -->
-<input type="button" value="按钮1" v-on:click="show">
-<!-- 缩写 -->
-<input type="button" value="按钮2" @click="show">
+    <!--v-on 指令监听 DOM 事件来触发一些 JavaScript 代码-->
+    <input type="button" value="按钮1" v-on:click="count++">你点击次数为{{count}}
+    <br />
+    <!-- 许多事件处理的逻辑都很复杂，所以直接把 JavaScript 代码写在 v-on 指令中是不可行的
+因此 v-on 可以接收一个定义的方法来调用。-->
+    <input type="button" value="按钮1" v-on:click="show">
+    <!-- 缩写 -->
+    <input type="button" value="按钮2" @click="show">
+    <input type="button" value="按钮3" @click="show">
+    <ul>
+        <li v-for="value in arr">{{value}}</li>
+    </ul>
+
 </div>
 </body>
 </html>

@@ -18,5 +18,11 @@ angular所有的数据和方法都是挂载在$scope上，而vue的数据和方�
 
 
 
+显示隐藏:
+
+		v-show=“true/false”
+
+
+
 
 
