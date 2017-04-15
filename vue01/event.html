@@ -66,10 +66,8 @@
     <div @click="showFather()" style="background:red;height:40px;">
         <input type="button" value="按钮" name="username" id="username" @click="showChild($event)" />
         <!-- 阻止单击事件冒泡 -->
-        <input type="button" value="按钮" name="username" id="username2" @click.stop
-                ="showChild($event)" />
+        <input type="button" value="按钮" name="username" id="username2" @click.stop="showChild($event)" />
         <!--归纳，阻止事件冒泡两种方式1、事件处理方式2、使用事件修饰符(推荐) .stop-->
-
     </div>
     <br />
     <a href="http://www.baidu.com" @click.prevent="changeLink1()">百度一下1</a>
