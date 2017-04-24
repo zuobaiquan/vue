@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+{{a}}
+{{b}}
+</div>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: "#box",
+        data:{
+            a:1,
+        },
+        computed:{
+            //这里b看起来是个函数，实质上是属性
+            b:function(){
+                return 2;
+            }
+        }
+    })
+//    computed:{
+//        b:function(){	//默认调用get
+//            return 值
+//        }
+//    }
+//    --------------------------
+//    computed:{
+//        b:{
+//            get:
+//            set:
+//        }
+//    }
+//    * computed里面可以放置一些业务逻辑代码，一定记得return
+      //https://cn.vuejs.org/v2/guide/computed.html
+</script>
+</body>
+</html>
