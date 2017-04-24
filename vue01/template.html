@@ -23,6 +23,17 @@
     数据只绑定一次：{{*msg}}             <br />
     <!--只渲染元素和组件一次。随后的重新渲染,元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。-->
     HTML转义输出{{{msg2}}}              <br />
+    <!--等价于-->
+
+    <!--用户会看到花括号标记:
+    v-cloak	防止闪烁, 比较大段落
+    <span>{{msg}}</span>	等价于   v-text
+    {{{msg}}}		等价于   v-html    -->
+    <span v-text="msg"></span>
+    <span v-text="msg2"></span>
+
+    <span v-html="msg"></span>
+    <span v-html="msg2"></span>
     对比：{{msg2}}
 </div>
 </body>
