@@ -6,8 +6,8 @@
 </head>
 <body>
 <div id="box">
-{{a}}
-{{b}}
+a的值{{a}}
+b的值{{b}}
 </div>
 <script type="text/javascript" src="../lib/vue.js"></script>
 <script type="text/javascript">
@@ -19,7 +19,7 @@
         computed:{
             //这里b看起来是个函数，实质上是属性
             b:function(){
-                return 2;
+                return ++this.a;
             }
         }
     })
@@ -36,7 +36,8 @@
 //        }
 //    }
 //    * computed里面可以放置一些业务逻辑代码，一定记得return
-      //https://cn.vuejs.org/v2/guide/computed.html
+//Computed-属性-vs-Watched-属性
+//https://cn.vuejs.org/v2/guide/computed.html#Computed-属性-vs-Watched-属性
 </script>
 </body>
 </html>
