@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" />
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        var vm = new Vue({
+            el: "#box",
+            data:{
+                count:0,
+                arr:['orange','apple','pear']
+            },
+            methods:{
+                show:function(e){
+                    console.log(e.target.tagName);
+                    //this在方法里指当前 Vue 实例
+                    this.arr.push('fruit');//vm.arr.push('fruit');
+                },
+                change:function(e){
+                    console.log(e);
+                },
+                showFather:function(){
+                    alert(11111);
+                },
+                showChild:function(e){
+                    ///e.cancelBubble=true;//阻止事件冒泡
+                    e.stopPropagation();
+                    alert(22222);
+                },
+                changeLink1:function(e){
+                    console.log("阻止默认行为，超链接失效！");
+                },
+                changeLink2:function(e){
+                    //阻止默认行为
+                    e.preventDefault();
+                },
+                changeLink3:function(e){
+                    alert(e.keyCode);
+                },
+                changeLink4:function(e){
+                    alert("你按了回车键");
+                }
+            }
+        })
+    }
+</script>
+</head>
+<body>
+<div id="box">
+    <!--v-on 指令监听 DOM 事件来触发一些 JavaScript 代码-->
+    <input type="button" value="按钮1" v-on:click="count++">你点击次数为{{count}}
+    <br />
+    <!-- 许多事件处理的逻辑都很复杂，所以直接把 JavaScript 代码写在 v-on 指令中是不可行的
+因此 v-on 可以接收一个定义的方法来调用。-->
+    <input type="button" value="按钮1" v-on:click="show">
+    <!-- 缩写 -->
+    <input type="button" value="按钮2" @click="show">
+    <input type="button" value="按钮3" @click="change($event)">
+    <ul>
+        <li v-for="value in arr">{{value}}</li>
+    </ul>
+
+    <!--点击input按钮 弹出alert2222，接着alert1111-->
+    <div @click="showFather()" style="background:red;height:40px;">
+        <input type="button" value="按钮" name="username" id="username" @click="showChild($event)" />
+        <!-- 阻止单击事件冒泡 -->
+        <input type="button" value="按钮" name="username" id="username2" @click.stop="showChild($event)" />
+        <!--归纳，阻止事件冒泡两种方式1、事件处理方式2、使用事件修饰符(推荐) .stop-->
+    </div>
+    <br />
+    <a href="http://www.baidu.com" @click.prevent="changeLink1()">百度一下1</a>
+    <a href="http://www.baidu.com" @click="changeLink2($event)">百度一下2</a>
+
+    <!--键盘事件-->
+    <br />
+    <input type="text" name="keyevent" @keyup="changeLink3($event)">
+    <br />
+    <input type="text" name="keyevent" @keyup.enter="changeLink4($event)">
+</div>
+</body>
+</html>
