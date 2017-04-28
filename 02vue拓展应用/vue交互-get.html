@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="../lib/vue.js"></script>
+    <!--如果vue想做交互 引入: vue-resouce.js-->
+	<script type="text/javascript" src="../lib/vue-resource.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			var vm = new Vue({
+				el: "#box",
+				data:{
+					//数据
+				},
+                methods:{
+                    get:function(){
+                        this.$http.get('notebook.md').then(function(res){
+                            //返回的res是一个对象
+                            //data,ok:true,request:Object,status:200,statusText:"OK"
+                            console.log(res);
+                        },function(){
+                            alert("失败了");
+                        })
+                    }
+                }
+			})
+		}
+	</script>
+</head>
+<body>
+<div id="box">
+    <input type="button" value="按钮" @click="get()">
+</div>
+</body>
+</html>
