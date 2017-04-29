@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    {{fullName}}
+</div>
+</body>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script>
+    var vm=new Vue({
+        el:"#box",
+        data:{
+            firstName: 'Foo',
+            lastName: 'Bar',
+            fullName: 'Foo Bar'
+        },
+    });
+    //使用$watch
+    vm.$watch('firstName', function (val) {
+        this.fullName = val + ' ' + this.lastName
+    })
+
+    vm.$watch('lastName', function (val) {
+        this.fullName = this.firstName + ' ' + val
+    });
+
+//    var vm = new Vue({
+//        el: '#box',
+//        data: {
+//            firstName: 'Foo',
+//            lastName: 'Bar'
+//        },
+//        computed: {
+//            fullName: function () {
+//                return this.firstName + ' ' + this.lastName
+//            }
+//        }
+//    })
+//    总结：
+//      计算属性：用于简单场合，比如计算，合并字符串等；
+//      watch属性：用于耗时的，可以异步的获取远程服务上的数据这样的操作。
+</script>
+</html>

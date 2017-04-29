@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    默认键盘信息<input type="text" @keydown.a="show">  <br />
+    自定义键盘信息<input type="text" @keydown.myctrl="show">
+    <!--这里表示按下键盘a执行 show函数，还有其他键盘
+    @keydown.up
+    @keydown.enter
+    @keydown.a/b/c....
+    -->
+    <!--当写用 @keydown.ctrl 时并没有任何反应，这里就需要自定义键盘信息-->
+</div>
+</body>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script>
+//    获取键盘事件对应的键码
+//    document.onkeydown=function(e){
+//        alert(e.keyCode);
+//    }
+//    自定义键盘信息
+    Vue.directive('on').keyCodes.myctrl=17;
+
+    window.onload=function(){
+        var vm=new Vue({
+            el:'#box',
+            data:{
+                msg:'welcome'
+            },
+            methods:{
+                show:function(){
+                    alert(11111);
+                }
+            }
+        });
+    };
+
+
+</script>
+</html>

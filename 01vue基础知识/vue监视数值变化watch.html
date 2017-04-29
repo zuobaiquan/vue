@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+{{a}}   <br />
+{{b}}
+</div>
+</body>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script>
+        var vm=new Vue({
+            el:'#box',
+            data:{
+                a:1,
+                b:2,
+            },
+        });
+        vm.$watch("a",function(){
+            alert("a的值变化了");
+        });
+        document.onclick=function(){
+            vm.a=10;
+        }
+//    vm.$watch(name,fnCb);  //浅度
+//    vm.$watch(name,fnCb,{deep:true});  //深度监视
+</script>
+</html>
