@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div id="box">
+    <aa></aa>
+</div>
+</body>
+<script type="text/javascript" src="./bower_components/vue/dist/vue.min.js"></script>
+<script>
+    var Aaa=Vue.extend({
+        template:'<h3>我是标题3</h3>'
+    });
+
+    new Vue({
+        el:'#box',
+        data:{
+            msg:'box'
+        },
+        components:{
+            //局部组件，组件的名称需要加引号
+            'aa':Aaa,
+        }
+   });
+//    局部组件：放到某个组件内部
+
+</script>
+</html>

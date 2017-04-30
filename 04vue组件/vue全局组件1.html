@@ -3,8 +3,6 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <style type="text/css">
-    </style>
 </head>
 <body>
 <div id="box">
@@ -13,10 +11,12 @@
 </body>
 <script type="text/javascript" src="./bower_components/vue/dist/vue.min.js"></script>
 <script>
-    var aAa=Vue.extend({
-        template:"<h1>我是大标题</h1>",
+    var Aaa=Vue.extend({
+        template:'<h3>我是标题3</h3>'
     });
-    Vue.component("aa",aAa);
+    //放在这里就是 全局组件
+    Vue.component("aa",Aaa);
+    //
     new Vue({
         el:'#box',
         data:{
@@ -24,5 +24,12 @@
         },
     });
 //    组件: 也就是一个大对象
+//    1. 全局组件
+//    var Aaa=Vue.extend({
+//        template:'<h3>我是标题3</h3>'
+//    });
+//
+//    Vue.component('aaa',Aaa);
+
 </script>
 </html>

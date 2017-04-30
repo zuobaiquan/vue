@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    <my-aa></my-aa>
+</div>
+</body>
+<script type="text/javascript" src="./bower_components/vue/dist/vue.min.js"></script>
+<script>
+    //第一种
+//    Vue.component('my-aa',{
+//        template:'<strong>好好</strong>'
+//    });
+//
+//    var vm=new Vue({
+//        el:'#box',
+//    });
+    //第二种
+    var vm=new Vue({
+        el:'#box',
+        components:{
+            'my-aa':{
+                data(){
+                    return {
+                        msg:'hello '
+                    }
+                },
+                methods:{
+                    change(){
+                        alert(1111);
+                        this.msg="changed";
+                    }
+                },
+                template:'<strong @click="change">好=={{msg}}</strong>'
+            }
+        }
+   });
+
+</script>
+</html>

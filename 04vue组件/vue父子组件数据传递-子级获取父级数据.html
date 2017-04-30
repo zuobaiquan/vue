@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    <aaa></aaa>
+    <template id="aaa">
+        <h1>11111</h1>
+        <bbb :mmm="msg2"></bbb>
+    </template>
+</div>
+</body>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script>
+var vm=new Vue({
+    el:'#box',
+    data:{
+        msg:'hello'
+    },
+    components:{
+        'aaa':{
+            data(){
+                return {
+                    msg2:'我是父组件的数据'
+                }
+            },
+            template:'#aaa',
+            components:{
+                'bbb':{
+                    props:['mmm'],
+                    template:'<h3>我是bbb组件->{{mmm}}</h3>'
+                }
+            }
+        }
+    }
+});
+//    ① 子级获取父级数据
+//    在调用子组件：(m是自定义名称)
+//    <bbb :m="数据"></bbb>
+//    子组件之内:
+//    props:['m','myMsg']
+//
+//    props:{
+//        'm':String,
+//        'myMsg':Number
+//    }
+</script>
+</html>

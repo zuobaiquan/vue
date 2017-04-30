@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    <!--如果标签aaa里面有标签，不显示slot-->
+    <aaa>
+        <ul>
+            <li>1111</li>
+            <li>2222</li>
+            <li>3333</li>
+        </ul>
+    </aaa>
+    <hr>
+    <!--如果标签aaa里面没有标签，显示slot-->
+    <aaa>
+    </aaa>
+    <template id="atpl">
+        <h1>xxxx</h1>
+        <slot>这是默认的情况</slot>
+        <p>welcome vue</p>
+    </template>
+</div>
+</body>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script>
+var vm=new Vue({
+    el:'#box',
+    data:{
+        msg:'hello'
+    },
+    components:{
+        'aaa':{
+            template:'#atpl'
+        }
+    }
+});
+//位置、槽口
+//作用: 占个位置
+//类似ng里面 transclude  (指令)
+</script>
+</html>
