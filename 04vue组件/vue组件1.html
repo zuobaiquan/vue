@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div id="box">
+    <aa></aa>
+</div>
+</body>
+<script type="text/javascript" src="./bower_components/vue/dist/vue.min.js"></script>
+<script>
+    var aAa=Vue.extend({
+        template:"<h1>我是大标题</h1>",
+    });
+    Vue.component("aa",aAa);
+    new Vue({
+        el:'#box',
+        data:{
+            msg:'box'
+        },
+    });
+//    组件: 也就是一个大对象
+</script>
+</html>
