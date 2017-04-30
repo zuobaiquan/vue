@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    <button @click="toshow">点击让子组件显示</button>
+    <aaa>
+        <span slot="first">【12345】</span>
+        <!--上面这行不会显示-->
+    </aaa>
+</div>
+</body>
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#box',
+        methods: {
+            toshow: function () {
+                this.$children[0].tohidden = true;
+            }
+        },
+        components: {
+            'aaa':{
+                template: "<div v-if='tohidden' @click='tohide'>这里是子组件</div>",
+                data: function () {
+                    return {
+                        tohidden: true
+                    }
+                },
+                methods: {
+                    tohide: function () {
+                        this.tohidden = !this.tohidden;
+                    }
+                }
+            }
+
+        },
+    });
+</script>
+</html>

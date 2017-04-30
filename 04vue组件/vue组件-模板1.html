@@ -6,7 +6,10 @@
 </head>
 <body>
 <div id="box">
-    <my-aa></my-aa>
+    <my-aa>
+        <h1>注意：此标签不显示</h1>
+        <!--上面这行不会显示-->
+    </my-aa>
 </div>
 <script type="x-template" id="aaa">
     <h3 @click="change">标题->{{msg}}</h3>

@@ -7,37 +7,43 @@
 <body>
 <div id="box">
     <aaa>
-        <ul>
+        <ul slot="ul-slot">
             <li>1111</li>
             <li>2222</li>
             <li>3333</li>
         </ul>
+        <ol slot="ol-slot">
+            <li>111</li>
+            <li>222</li>
+            <li>333</li>
+        </ol>
     </aaa>
     <hr>
     <aaa>
     </aaa>
-    <template id="atpl">
+    <template id="aaa">
         <h1>xxxx</h1>
-        <slot>这是默认的情况</slot>
+        <slot name="ol-slot">这是默认的情况</slot>
         <p>welcome vue</p>
+        <slot name="ul-slot">这是默认的情况2</slot>
     </template>
 </div>
 </body>
 <script type="text/javascript" src="../lib/vue.js"></script>
 <script>
-var vm=new Vue({
-    el:'#box',
-    data:{
-        msg:'hello'
-    },
-    components:{
-        'aaa':{
-            template:'#atpl'
+    var vm=new Vue({
+        el:'#box',
+        data:{
+            a:'aaa'
+        },
+        components:{
+            'aaa':{
+                template:'#aaa'
+            }
         }
-    }
-});
-//位置、槽口
-//作用: 占个位置
-//类似ng里面 transclude  (指令)
+    });
+    //位置、槽口
+    //作用: 占个位置
+    //类似ng里面 transclude  (指令)
 </script>
 </html>
