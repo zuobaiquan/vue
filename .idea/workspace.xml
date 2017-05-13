@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef0d3ed3-f99d-476d-aae1-26583d18aa83" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/05vue路由/vue路由--单页面SPA切换.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/animate-config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/_base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/headShake.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/jello.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/pulse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/rubberBand.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/shake.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/swing.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/tada.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/attention_seekers/wobble.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_entrances/bounceIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_entrances/bounceInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_entrances/bounceInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_entrances/bounceInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_entrances/bounceInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_exits/bounceOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_exits/bounceOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_exits/bounceOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_exits/bounceOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/bouncing_exits/bounceOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInDownBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInLeftBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInRightBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_entrances/fadeInUpBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutDownBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutLeftBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutRightBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/fading_exits/fadeOutUpBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/flippers/flip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/flippers/flipInX.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/flippers/flipInY.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/flippers/flipOutX.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/flippers/flipOutY.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/lightspeed/lightSpeedIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/lightspeed/lightSpeedOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_entrances/rotateIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_entrances/rotateInDownLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_entrances/rotateInDownRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_entrances/rotateInUpLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_entrances/rotateInUpRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_exits/rotateOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_exits/rotateOutDownLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_exits/rotateOutDownRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_exits/rotateOutUpLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/rotating_exits/rotateOutUpRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_entrances/slideInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_entrances/slideInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_entrances/slideInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_entrances/slideInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_exits/slideOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_exits/slideOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_exits/slideOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/sliding_exits/slideOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/specials/hinge.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/specials/rollIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/specials/rollOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_entrances/zoomIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_entrances/zoomInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_entrances/zoomInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_entrances/zoomInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_entrances/zoomInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_exits/zoomOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_exits/zoomOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_exits/zoomOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_exits/zoomOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/04vue组件/bower_components/animate.css/source/zooming_exits/zoomOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/animate-config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/_base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/headShake.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/jello.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/pulse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/rubberBand.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/shake.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/swing.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/tada.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/attention_seekers/wobble.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_entrances/bounceIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_entrances/bounceInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_entrances/bounceInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_entrances/bounceInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_entrances/bounceInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_exits/bounceOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_exits/bounceOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_exits/bounceOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_exits/bounceOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/bouncing_exits/bounceOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInDownBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInLeftBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInRightBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_entrances/fadeInUpBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutDownBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutLeftBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutRightBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/fading_exits/fadeOutUpBig.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/flippers/flip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/flippers/flipInX.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/flippers/flipInY.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/flippers/flipOutX.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/flippers/flipOutY.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/lightspeed/lightSpeedIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/lightspeed/lightSpeedOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_entrances/rotateIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_entrances/rotateInDownLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_entrances/rotateInDownRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_entrances/rotateInUpLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_entrances/rotateInUpRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_exits/rotateOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_exits/rotateOutDownLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_exits/rotateOutDownRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_exits/rotateOutUpLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/rotating_exits/rotateOutUpRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_entrances/slideInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_entrances/slideInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_entrances/slideInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_entrances/slideInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_exits/slideOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_exits/slideOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_exits/slideOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/sliding_exits/slideOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/specials/hinge.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/specials/rollIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/specials/rollOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_entrances/zoomIn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_entrances/zoomInDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_entrances/zoomInLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_entrances/zoomInRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_entrances/zoomInUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_exits/zoomOut.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_exits/zoomOutDown.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_exits/zoomOutLeft.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_exits/zoomOutRight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/bower_components/animate.css/source/zooming_exits/zoomOutUp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/05vue路由/vue路由1.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/04vue组件/vue全局组件2.html" afterPath="$PROJECT_DIR$/04vue组件/vue全局组件2.html" />
+    </list>
+    <ignored path="vue.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="vue" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06vue-loader/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06vue-loader/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/06vue-loader/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3478261">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06vue-loader/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06vue-loader/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#47#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="package_json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/04vue组件/vue全局组件2.html" />
+        <option value="$PROJECT_DIR$/05vue路由/vue路由1.html" />
+        <option value="$PROJECT_DIR$/05vue路由/vue路由--页面跳转.html" />
+        <option value="$PROJECT_DIR$/05vue路由/vue路由--路由嵌套.html" />
+        <option value="$PROJECT_DIR$/05vue路由/vue路由--路由嵌套参数.html" />
+        <option value="$PROJECT_DIR$/06vue-loader/webpack.config.js" />
+        <option value="$PROJECT_DIR$/06vue-loader/index.html" />
+        <option value="$PROJECT_DIR$/06vue-loader/main.js" />
+        <option value="$PROJECT_DIR$/06vue-loader/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="1" id="添加" />
+    <ConfirmationsSetting value="0" id="移除" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="06vue-loader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\wwwroot\github\vue\06vue-loader" />
+      <recent name="E:\wwwroot\github\vue" />
+      <recent name="E:\wwwroot\github\vue\05vue路由" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef0d3ed3-f99d-476d-aae1-26583d18aa83" name="默认的" comment="" />
+      <created>1494334981733</created>
+      <option name="number" value="Default" />
+      <updated>1494334981733</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/06vue-loader/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04vue组件/vue组件-模板2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04vue组件/vue组件slot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04vue组件/vue全局组件2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2649727">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04vue组件/vue动态组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.1306715">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04vue组件/vue全局组件1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05vue路由/vue路由--单页面SPA切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.225807">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05vue路由/vue路由--页面跳转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.612903">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05vue路由/vue路由--路由嵌套.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5161295">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05vue路由/vue路由--路由嵌套参数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34664246">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06vue-loader/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3478261">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
