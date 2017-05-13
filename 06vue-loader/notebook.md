@@ -58,7 +58,39 @@ webpak准备工作:
 	babel-preset-es2015
 	babel-runtime
 
-
+```javascript
+//没有创建 package.json 文件的话，可以直接使用 npm init --yes 来初始化 package.json 文件的配置。
+//注意：在实际项目中，json文件中不能出现注释
+{
+  "name": "06vue-loader",//项目名称
+  "version": "1.0.0",//版本
+  "description": "",//描述
+  "main": "main.js",  // //主文件main.js
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --port 8085"
+    //scripts指定了运行脚本命令的npm命令行缩写，比如这是的dev指定了运行npm run dev时，所要执行的命令。
+  },
+  "keywords": [],//关键字
+  "author": "",//作者
+  "license": "ISC",//开源协议
+  "devDependencies": {//各种各样的loader，用来解析想相应的文件格式。要解析vue并且完成相应的功能，这些基本都是必须的。
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "css-loader": "^0.28.1",
+    "vue-hot-reload-api": "^1.3.2",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^8.5.4",
+    "vue-style-loader": "^1.0.0"
+  },
+  "dependencies": { ////项目依赖
+    "vue": "^1.0.28"
+  }
+}
+//如果想省事的话，直接复制上面的 devDependencies , dependencies 字段，并且填写到 package.json 文件中。然后运行 npm install 就会自动安装所有的模块以及依赖。
+```
 
 
 
