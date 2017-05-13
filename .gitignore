@@ -1,0 +1,3 @@
+#ignore these files 
+
+06vue-loader/node_modules/* 
