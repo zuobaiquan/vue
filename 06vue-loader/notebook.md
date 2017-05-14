@@ -67,7 +67,8 @@ webpak准备工作:
   "description": "",//描述
   "main": "main.js",  // //主文件main.js
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --port 8085"
+    "dev": "webpack-dev-server --inline --hot --port 8085",  //代码调试，运行inline模式，并启用热模块替换
+    "build":"webpack -p"   //文件打包
     //scripts指定了运行脚本命令的npm命令行缩写，比如这是的dev指定了运行npm run dev时，所要执行的命令。
   },
   "keywords": [],//关键字

@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --port 8088"
+    "dev": "webpack-dev-server --inline --hot --port 8088",
+    "build":"webpack -p"
   },
   "keywords": [],
   "author": "",
