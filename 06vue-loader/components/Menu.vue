@@ -1,10 +1,14 @@
 <template>
 	<ul>
-		<li>111</li>
-		<li>111</li>
-		<li>111</li>
+		<li v-for="val in dataList">{{val}}</li>
 	</ul>
 </template>
 <script>
-	
+	export default {
+		data(){
+			return {
+				dataList:['orange','apple','pear']
+			}
+		},
+	}
 </script>

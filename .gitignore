@@ -1,3 +1,4 @@
 #ignore these files 
 
 06vue-loader/node_modules/* 
+07vue-router_recv/node_modules/* 

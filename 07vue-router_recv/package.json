@@ -1,10 +1,10 @@
 {
-  "name": "06vue-loader",
+  "name": "07vue-router_recv",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --port 8080"
+    "dev": "webpack-dev-server --inline --hot --port 8088"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "vue-style-loader": "^1.0.0"
   },
   "dependencies": {
-    "vue": "^1.0.28"
+    "vue": "^1.0.28",
+    "vue-router": "^0.7.13"
   }
 }
