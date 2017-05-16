@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    <my-aaa></my-aaa>
+</div>
+<script type="text/javascript" src="../lib/vue.min.js"></script>
+<script type="text/javascript">
+    Vue.component('my-aaa',{
+        template:'<div><h3>我是h3标题</h3><strong>我是加粗标签</strong></div>'
+        //错误写法  template:'<h3>我是h3标题</h3><strong>我是加粗标签</strong>'
+    })
+    new Vue({
+        el: "#box",
+        data:{
+            msg:'zuobaiquan',
+        },
+    })
+    //在每个组件模板，不在支持片段代码
+    //必须有根元素，包裹住所有的代码
+</script>
+</body>
+</html>

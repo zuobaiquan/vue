@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    <Home></Home>
+</div>
+<template id="aaa">
+    <div>
+        <h3>我是h3标题</h3>
+        <strong>我是加粗标签</strong>
+    </div>
+</template>
+<script type="text/javascript" src="../lib/vue.min.js"></script>
+<script type="text/javascript">
+    var Home={
+        template:'#aaa'
+    }
+    new Vue({
+        el: "#box",
+        data:{
+            msg:'zuobaiquan',
+        },
+        components:{
+            Home
+            //或者写成
+            //'my-aaa':Home，在模板中调用就直接<my-aaa></my-aaa>
+        }
+    })
+//  关于组件定义
+//  Vue.extend  这种方式，在2.0里面有，但是有一些改动，这种写法，即使能用，咱也不用——废弃
+//  vue2继续可以使用
+//  Vue.component('组件名称',{
+//      data(){}
+//      methods:{}
+//      template:''
+//  });
+
+//  推出一个组件，简洁定义方式  类似之前的Vue.extend()
+//  var Home={
+//     template:''
+//  };
+
+</script>
+</body>
+</html>
