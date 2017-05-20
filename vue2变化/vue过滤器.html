@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    {{msg | toDou('12','5')}}<br />
+    {{msg2 | toDou('12','5')}}
+</div>
+<script type="text/javascript" src="../lib/vue.min.js"></script>
+<script type="text/javascript">
+    Vue.filter('toDou',function(n,a,b){
+        //console.log(a+','+b);
+        //这里为了演示其他的参数 a、b
+        return n<10?'0'+n:''+n;
+    });
+    new Vue({
+        el:'#box',
+        data:{
+            msg:9,
+            msg2:10
+        }
+    });
+
+</script>
+</body>
+</html>

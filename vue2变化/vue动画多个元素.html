@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../lib/animate.min.css">
+    <style>
+        p{
+            width:100px;
+            height:100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <input type="button" value="点击显示隐藏" @click="show=!show">
+
+    <transition-group enter-active-class="zoomInLeft" leave-active-class="zoomOutRight">
+        <p v-show="show" class="animated" :key="1"></p>
+        <p v-show="show" class="animated" :key="2"></p>
+    </transition-group>
+</div>
+<script src="../lib/vue.min.js"></script>
+<script>
+    new Vue({
+        el:'#box',
+        data:{
+            show:false
+        }
+    });
+</script>
+</body>
+</html>

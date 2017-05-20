@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    父级: ->{{a}}
+    <br>
+    <child-com :msg="a"></child-com>
+    <child-com :msg.sync="a"></child-com>
+</div>
+<template id="child">
+    <div>
+        <span>我是子组件</span>
+        <input type="button" value="按钮" @click="change">
+        <strong>{{msg}}</strong>
+    </div>
+</template>
+<!--版本2-->
+<!--<script type="text/javascript" src="../lib/vue.min.js"></script>-->
+
+<!--版本1-->
+<script type="text/javascript" src="../lib/vue.js"></script>
+<script type="text/javascript">
+    new Vue({
+        el:'#box',
+        data:{
+            a:'我是父组件数据'
+        },
+        components:{
+            'child-com':{
+                props:['msg'],
+                template:'#child',
+                methods:{
+                    change(){
+                        this.msg='被更改了'
+                    }
+                }
+            }
+        }
+    });
+//  之前，子组件可以更改父组件信息，可以是同步  sync
+//  现在，不允许直接给父级的数据，做赋值操作
+</script>
+</body>
+</html>

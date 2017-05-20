@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="box">
+    <input type="button" value="添加" @click="add">
+    <ul>
+        <div v-for="(value, key, index) in dataObj">
+            {{ index }}. {{ key }} : {{ value }}
+        </div>
+        <!--在遍历对象时，是按 Object.keys() 的结果遍历-->
+        <!--去掉了隐式一些变量-->
+        <!--$index	$key -->
+        <!--
+            arr.forEach(function(item,index){
+
+            });
+        -->
+    </ul>
+</div>
+<script type="text/javascript" src="../lib/vue.min.js"></script>
+<script type="text/javascript">
+    new Vue({
+        el:'#box',
+        data:{
+            list:['width','height','border'],
+            dataObj: {
+                FirstName: 'John',
+                LastName: 'Doe',
+                Age: 30
+            }
+        },
+        methods:{
+            add(){
+                this.list.push('background');
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

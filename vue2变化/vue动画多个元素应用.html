@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../lib/animate.min.css">
+    <style>
+        p{
+            width:100px;
+            height:100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <input type="text" v-model="show">
+
+    <transition-group enter-active-class="zoomInLeft" leave-active-class="zoomOutRight">
+        <p v-show="show" class="animated" v-for="(val,index) in dataLists" :key="index">
+            {{val}}
+        </p>
+    </transition-group>
+</div>
+<script src="../lib/vue.min.js"></script>
+<script>
+new Vue({
+    el:'#box',
+    data:{
+        show:'',
+        list:['apple','banana','orange','pear']
+    },
+    computed:{
+        dataLists(){
+            var arr=[];
+            this.list.forEach(function(val){
+                if(val.indexOf(this.show)!=-1){
+                    arr.push(val);
+                }
+            }.bind(this));
+            return arr;
+        }
+    }
+});
+</script>
+</body>
+</html>
