@@ -446,7 +446,95 @@ class定义:
 </transition-group>
 ```
 
-9.vue路由
+### 9.vue路由
 
+学习电子书：http://router.vuejs.org/zh-cn/index.html
 
+1.  布局
 
+  ```
+  <router-link to="/home">主页</router-link>
+
+  <router-view></router-view>
+
+  ```
+
+2.具体写法
+
+```javascript
+//1、组件
+var Home={
+    template:'<h1>我是主页</h1>'
+};
+var News={
+    template:'<h1>我是新闻</h1>'
+};
+
+////2、配置路由
+//const routes=[
+//    {path:'/home', component:Home},
+//    {path:'/news', component:News}
+//];
+//
+////3、生成路由实例
+//const router=new VueRouter({
+//    routes
+//});
+
+//这里可以把步骤2和步骤3合并一起
+const router=new VueRouter({
+    routes:[
+        {path:'/home', component:Home},
+        {path:'/news', component:News},
+        {path:'*', redirect:'/home'}
+    ]
+});
+
+//4、最后挂到vue上
+new Vue({
+    router,
+    el:'#box'
+});
+```
+
+路由嵌套:
+
+	/user/username
+
+```javascript
+const routes=[
+    {path:'/home', component:Home},
+    {
+        path:'/user',
+        component:User,
+        children:[  //核心
+            {path:'username', component:UserDetail}
+        ]
+    },
+    {path:'*', redirect:'/home'}  //404
+];
+```
+/user/strive/age/10
+
+:id
+:username
+:age
+
+路由实例方法:
+	router.push({path:'home'});  //直接添加一个路由,表现切换路由，本质往历史记录里面添加一个
+	router.replace({path:'news'}) //替换路由，不会往历史记录里面添加
+
+### 10.脚手架:  vue-loader
+
+```javascript
+//1.0  -> 
+new Vue({
+  el: '#app',
+  components:{App}
+})	
+//2.0->
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
+```
