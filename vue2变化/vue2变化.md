@@ -429,12 +429,10 @@ class定义:
 
 配合animate.css配合用
 
-```
-<transition enter-active-class="animated zoomInLeft" leave-active-
-
-class="animated zoomOutRight">
-            	<p v-show="show"></p>
-        	</transition>
+```html
+<transition enter-active-class="animated zoomInLeft" leave-active-class="animated zoomOutRight">
+     <p v-show="show"></p>
+</transition>
 ```
 
 
@@ -447,3 +445,8 @@ class="animated zoomOutRight">
 	<p :key=""></p>
 </transition-group>
 ```
+
+9.vue路由
+
+
+

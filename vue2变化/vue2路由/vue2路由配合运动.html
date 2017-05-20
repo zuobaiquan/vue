@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="../../lib/animate.min.css" rel="stylesheet">
+    <style type="text/css">
+        .router-link-active{
+            font-size:24px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div>
+        <!--之前是a标签，现在是router-link-->
+        <router-link to="/home">主页</router-link>
+        <router-link to="/news">新闻</router-link>
+    </div>
+    <div>
+        <transition enter-active-class="animated bounceInDown">
+            <router-view></router-view>
+        </transition>
+    </div>
+</div>
+<script src="../../lib/vue.min.js"></script>
+<script src="vue-router.min.js"></script>
+<script>
+//1、组件
+var Home={
+    template:'<h1>我是主页</h1>'
+};
+var News={
+    template:'<h1>我是新闻</h1>'
+};
+
+////2、配置路由
+//const routes=[
+//    {path:'/home', component:Home},
+//    {path:'/news', component:News}
+////    {path:'*', redirect:'/home'}
+//];
+//
+////3、生成路由实例
+//const router=new VueRouter({
+//    routes
+//});
+
+//这里可以把步骤2和步骤3合并一起
+const router=new VueRouter({
+    routes:[
+        {path:'/home', component:Home},
+        {path:'/news', component:News},
+        {path:'*', redirect:'/home'}
+    ]
+});
+
+
+//4、最后挂到vue上
+new Vue({
+    router,
+    el:'#box'
+});
+</script>
+</body>
+</html>
