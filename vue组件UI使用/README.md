@@ -50,7 +50,7 @@ twitter	开源
 
 官网：http://element.eleme.io/
 
-使用：
+使用：主要针对 pc端的UI库
 
 1. 安装 element-ui
 
@@ -121,3 +121,53 @@ npm install less less-loader -D
    ```
 
 ​       更多学习资料 https://github.com/mzabriskie/axios
+
+### 3.mint-ui
+
+官网：http://mint-ui.github.io/       
+
+学习文档：http://mint-ui.github.io/docs/#/    
+
+中文文档：http://mint-ui.github.io/docs/#/zh-cn2
+
+使用：主要针对 移动端 UI库
+
+1.安装 mint-ui
+
+```bash
+#参看官网  http://mint-ui.github.io/#!/zh-cn
+npm install mint-ui -S
+```
+
+2.引入   main.js入口文件
+
+```javascript
+// 引入全部组件
+import Vue from 'vue';
+import Mint from 'mint-ui';
+Vue.use(Mint);
+
+// 按需引入部分组件
+import { Cell, Checklist } from 'minu-ui';
+Vue.component(Cell.name, Cell);
+Vue.component(Checklist.name, Checklist);
+```
+
+3.使用组件
+
+```
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.css'
+Vue.use(Mint);
+```
+
+也有按需引入，参看element UI
+
+
+
+
+
+
+
+
+
