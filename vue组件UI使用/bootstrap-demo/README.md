@@ -90,3 +90,33 @@ npm install less less-loader -D
 
 1. babel-plugin-component
   cnpm install babel-plugin-component -D
+
+2. .babelrc文件里面新增一个配置
+
+  ```javascript
+  "plugins": [["component", [
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-default"
+      }
+    ]]]
+  ```
+
+3. 想用哪个组件就用哪个
+  引入:
+  	import {Button,Radio} from 'element-ui'
+  使用:
+  	a). Vue.component(Button.name, Button);  个人不太喜欢
+  	b). Vue.use(Button);   √
+  详细参考：http://element.eleme.io/#/zh-CN/component/quickstart
+
+4. 交互
+
+   发送请求:
+
+   	vue-resourse
+
+   ```bash
+   axios
+   #更多学习资料 https://github.com/mzabriskie/axios
+   ```
