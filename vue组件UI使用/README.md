@@ -64,7 +64,7 @@ twitter	开源
   //   S	->    --save
   ```
 
-2.引入   main.js	入口文件
+  2.引入   main.js入口文件
 
 ```javascript
 import ElementUI from 'element-ui'
@@ -118,5 +118,6 @@ npm install less less-loader -D
 
    ```bash
    axios
-   #更多学习资料 https://github.com/mzabriskie/axios
    ```
+
+​       更多学习资料 https://github.com/mzabriskie/axios
