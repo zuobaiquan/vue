@@ -106,7 +106,8 @@ npm install less less-loader -D
   引入:
   	import {Button,Radio} from 'element-ui'
   使用:
-  	a). Vue.component(Button.name, Button);  个人不太喜欢
+  	a). Vue.component(Button.name, Button);  //不推荐
+  	
   	b). Vue.use(Button);   √
   详细参考：http://element.eleme.io/#/zh-CN/component/quickstart
 
