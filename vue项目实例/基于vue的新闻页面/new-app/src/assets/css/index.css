@@ -1,0 +1,35 @@
+body{ background:#f2f4f5;}
+
+.nav{width:100%; position:fixed; top:0;left:0; z-index:2; background:#fff;}
+.nav ul{width:4.38rem;height:0.6rem; margin:0 auto;}
+.nav ul li{width:1.46rem;height:0.6rem; float:left;}
+.nav ul li a{ display:block;width:1.46rem;height:0.6rem; line-height:0.6rem; text-align:center; font-size:0.3rem; color:#9e9a95;}
+.nav ul li.active a{height:0.5rem; border-bottom:0.1rem solid #5477b2; color:#5477b2;}
+
+.content{max-width:6.4rem; margin:0 auto; margin-bottom:0.8rem;}
+.content .banner{margin-top:0.6rem;position: relative;overflow: hidden; z-index: 1}
+.banner ul li{width:6.4rem;float:left;position: relative;}
+.banner ul li img{width:100%; display:block;}
+.banner ul li .text-box{width:5.8rem; padding:0 0.3rem;height:1.24rem; position:absolute; left:0; bottom:0; color:#fff; background:rgba(0,0,0,0.5);}
+.text-box h2{ font-size:0.3rem; font-weight:normal; margin-top:0.22rem; line-height:100%; margin-bottom:0.22rem; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.text-box p{ line-height:100%;}
+
+.banner ol{position:absolute; right:0.2rem;bottom:0.2rem;}
+.banner ol li{width:0.15rem;height:0.15rem; background:#5477b2; float:left; border-radius:50%; margin-right:0.08rem;}
+.banner ol li.active{ background:#fff;}
+
+.content .newsList{width:6.4rem; margin:0 auto;}
+.newsList ul{ padding:0 0.4rem;}
+.newsList ul li{ color:#494d4d; padding:0.2rem 0; border-bottom:1px dashed #ccc;}
+.newsList ul li h2{max-height:0.9rem; font-size:0.33rem; overflow:hidden;}
+.newsList ul li p{max-height:1.8rem; margin-top:0.05rem;overflow:hidden;}
+
+.foot-btn{width:100%;height:0.8rem; background:#fff; position:fixed; left:0; bottom:0; border-top:1px solid #9e9a95;}
+.foot-btn ul{width:4.08rem; margin:0 auto;}
+.foot-btn ul li{ float:left;}
+.foot-btn ul li a{ display:block; width:100%;height:100%;}
+.foot-btn ul .home{width:0.44rem;height:0.59rem; background:url(../img/home.png) no-repeat 0 0; background-size:100%; margin-top:0.1rem;}
+.foot-btn ul .write{width:0.82rem;height:0.81rem; background:url(../img/write.png) no-repeat 0 0; background-size:100%; margin-left:1.18rem;}
+.foot-btn ul .my{width:0.39rem;height:0.63rem; background:url(../img/my.png) no-repeat 0 0;background-size:100%; margin-left:1.18rem; margin-top:0.07rem;}
+
+
