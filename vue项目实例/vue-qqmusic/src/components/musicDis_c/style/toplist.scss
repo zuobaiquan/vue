@@ -1,0 +1,110 @@
+.mod_index--top {
+  background: #121212 url(https://y.gtimg.cn/mediastyle/yqq/img/bg_index_top2.jpg)
+    50% 0 no-repeat;
+  .section_inner {
+    height: 830px;
+  }
+  .index__tit_sprite {
+    width: 144px;
+    background-position: 0 -120px;
+  }
+}
+.index__line {
+  background-color: #fff;
+}
+.toplist__item {
+  position: relative;
+  float: left;
+  z-index: 2;
+  width: 25%;
+  height: 567px;
+  overflow: hidden;
+  .toplist__bg {
+    transform: scale(1);
+    transition: transform .75s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 567px;
+    background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_index_top.jpg?max_age=2592000&v=2591d4829162dfda6b9112c771edda86);
+  }
+  .mod_cover__icon_play {
+    top: 214px;
+  }
+  .toplist__line {
+    position: absolute;
+    left: 50%;
+    top: 215px;
+    margin-left: -31px;
+    width: 62px;
+    height: 2px;
+    background: rgba(255, 255, 255, .3);
+  }
+  .toplist__hd {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 110px;
+    text-align: center;
+    .toplist__tit_top {
+      display: block;
+      background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=ea6515ebb82f7609712c02805e2abe9c);
+      margin-left: auto;
+      margin-right: auto;
+      width: 66px;
+      height: 24px;
+      background-position: 0 -300px;
+      margin-bottom: 8px;
+    }
+    .toplist__tit_pop {
+      height: 36px;
+      line-height: 1;
+      font-size: 36px;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+}
+.toplist__songlist {
+  position: absolute;
+  top: 282px;
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+  white-space: nowrap;
+  .toplist__song {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    .toplist__number {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .toplist__songname {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 2px;
+      .js_song {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    .toplist__artist {
+      font-size: 13px;
+      opacity: .5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      .js_singers {
+        color: #fff;
+      }
+    }
+  }
+}
+.index__more {
+  top: 145px;
+}

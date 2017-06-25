@@ -1,0 +1,133 @@
+.mod_index {
+  position: relative;
+  .section_inner {
+    z-index: 2;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .index__hd {
+      position: relative;
+      width: 490px;
+      height: 48px;
+      padding-top: 80px;
+      margin: 0 auto 50px;
+      .index__tit {
+        font-weight: 400;
+        text-align: center;
+        .index__tit_sprite {
+          width: 193px;
+          display: block;
+          margin: 0 auto;
+          height: 48px;
+          background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=ea6515ebb82f7609712c02805e2abe9c);
+        }
+      }
+    }
+  }
+}
+.index__line {
+  position: absolute;
+  top: 104px;
+  width: 72px;
+  height: 1px;
+  opacity: .1;
+}
+.index__line--left {
+  left: 0;
+}
+.index__line--right {
+  right: 0;
+}
+
+// 下虚线
+.mod_slide_switch {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  .slide_switch__item {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    padding: 10px 0;
+    margin: 0 5px;
+    .slide_switch__bg {
+      background: rgba(21, 21, 21, .3);
+      display: block;
+      width: 100%;
+      height: 1px;
+    }
+  }
+}
+
+.index__more {
+  position: absolute;
+  right: 0;
+}
+.index__more:hover {
+  color: #31c27c;
+}
+.index__more--white {
+  font-size: 15px;
+  color: #fff;
+  .icon_index_arrow {
+    background-position: -40px -260px;
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=3139b9b10089fcb0bf3725ac66b82a40);
+    margin-left: 6px;
+  }
+  .icon_index_arrow:hover {
+    background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=3139b9b10089fcb0bf3725ac66b82a40);
+    background-position: 0 0;
+  }
+}
+.mod_cover {
+  opacity: .9;
+  zoom: 1;
+}
+.mod_cover:hover > .toplist__bg {
+  transform: scale(1.07);
+}
+.mod_cover:hover > .playlist__pic {
+  transform: scale(1.07);
+}
+.mod_cover:hover > .mod_cover__mask {
+  opacity: .4;
+}
+.mod_cover:hover > .mod_cover__icon_play {
+  transform: scale(1);
+  opacity: 1;
+}
+.mod_cover:hover > .toplist__line {
+  opacity: 0;
+}
+.mod_cover:hover + .playlist__title > .btn_opera_menu {
+  transition: .5s ease-in;
+  opacity: 1;
+}
+.mod_cover__mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.mod_cover__icon_play {
+  background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/cover_play.png?max_age=2592000&v=fa72193fd8d5000e90837380d6be93ea);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -35px;
+  width: 70px;
+  height: 70px;
+  opacity: 0;
+  transform: scale(.7);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  zoom: 1;
+}

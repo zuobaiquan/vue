@@ -1,0 +1,137 @@
+.footer {
+  color: #999;
+  background-color: #333;
+  clear: both;
+  height: 450px;
+  a {
+    color: #999;
+    &:hover {
+      color: #31c27c;
+    }
+  }
+  .section_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    .footer_tit {
+      font-size: 15px;
+      font-weight: 400;
+      padding: 80px 0 46px;
+    }
+    .icon_qm_pc,.icon_qm_mac,.icon_qm_kg,
+    .icon_qm_qp,.icon_qm_ss,.icon_qm_android,
+    .icon_qm_iphone{
+      display: block;
+      margin: 0 29px 12px;
+      height: 48px;
+      background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/footer.png?max_age=2592000&v=4739050c9bfc2db438241313ce65f4bf);
+    }
+  }
+  .footer_info {
+    overflow: hidden;
+    border-bottom: 1px solid #353535;
+    position: relative;
+  }
+}
+.footer_download {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  .footer_download_list {
+    margin-left: -29px;
+    .footer_download_list__item {
+      float: left;
+      text-align: center;
+      position: relative;
+      .icon_qm_pc {
+        width: 37px;
+        background-position: -2px 0;
+        &:hover {
+          background-position: -2px -50px;
+        }
+      }
+      .icon_qm_mac {
+        width: 46px;
+        background-position: -92px 0;
+        &:hover {
+          background-position: -92px -50px;
+        }
+      }
+      .icon_qm_android {
+        width: 37px;
+        background-position: -190px 0;
+        &:hover {
+          background-position: -190px -50px;
+        }
+      }
+      .icon_qm_iphone {
+        width: 34px;
+        background-position: -279px 0;
+        &:hover {
+          background-position: -279px -50px;
+        }
+      }
+    }
+  }
+}
+// 产品
+.footer_product {
+  position: absolute;
+  top: 0;
+  left: 476px;
+  width: 304px;
+  .footer_product_list {
+    margin-left: -25px;
+    .footer_product_list__item {
+      float: left;
+      margin-bottom: 18px;
+      text-indent: 25px;
+      margin-right: 5px;
+    }
+    .footer_product_list__item--pic {
+      text-align: center;
+      position: relative;
+      margin-right: 0;
+      text-indent: 0;
+      .icon_qm_kg {
+        width: 41px;
+        background-position: -370px 0;
+        &:hover {
+          background-position: -370px 47px;
+        }
+      }
+      .icon_qm_ss {
+        width: 37px;
+        background-position: -463px 0;
+        &:hover {
+          background-position: -463px 47px;
+        }
+      }
+      .icon_qm_qp {
+        margin-right: 23px;
+        width: 40px;
+        background-position: -563px 0;
+        &:hover {
+          background-position: -563px 47px;
+        }
+      }
+    }
+  }
+}
+// link
+.footer_link {
+  float: right;
+  width: 300px;
+  padding-bottom: 57px;
+  .footer_link_list__item {
+    float: left;
+    min-width: 100px;
+    margin-bottom: 12px;
+  }
+}
+// copyright
+.footer_copyright {
+  text-align: center;
+  line-height: 28px;
+  padding: 24px 0;
+}

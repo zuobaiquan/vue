@@ -1,0 +1,311 @@
+.mod_index--new {
+  height: 734px;
+  .index__hd {
+    padding-top: 80px;
+    margin-bottom: 43px;
+    position: relative;
+    width: 490px;
+    height: 48px;
+    margin: 0 auto 50px;
+    .index__tit {
+      font-weight: 400;
+      text-align: center;
+      .index__tit_sprite {
+        width: 193px;
+        background-position: 0 0;
+        display: block;
+        margin: 0 auto;
+        height: 48px;
+        background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/index_tit.png?max_age=2592000&v=ea6515ebb82f7609712c02805e2abe9c);
+      }
+      .icon_txt {
+        font: 0/0 a;
+      }
+    }
+    .index__line {
+      top: 104px;
+      position: absolute;
+      width: 72px;
+      height: 1px;
+      opacity: .2;
+      background-color: #fff;
+    }
+    .index__line--left {
+      left: 0;
+    }
+    .index__line--right {
+      right: 0;
+    }
+  }
+}
+.mod_index {
+  position: relative;
+  .section_inner {
+    z-index: 2;
+    overflow: hidden;
+    .index__more {
+      position: absolute;
+      right: 0;
+      top: initial;
+    }
+    .index__more:hover {
+      color: #31c27c;
+    }
+    .index__more--white {
+      font-size: 15px;
+      color: #fff;
+      .icon_index_arrow {
+        background-position: -40px -260px;
+        display: inline-block;
+        width: 7px;
+        height: 12px;
+        background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=3139b9b10089fcb0bf3725ac66b82a40);
+        margin-left: 6px;
+      }
+      .icon_index_arrow:hover {
+        background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=3139b9b10089fcb0bf3725ac66b82a40);
+        background-position: 0 0;
+      }
+    }
+    .mod_index_tab {
+      height: 50px;
+      text-align: center;
+      font-size: 0;
+      .index_tab__item {
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 35px;
+        color: #fff;
+        opacity: .5;
+      }
+      .index_tab__item:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+.mod_playlist {
+  text-align: center;
+  .playlist__item {
+    width: 25%;
+    background: rgba(0, 0, 0, .8);
+    font-size: 16px;
+    padding-bottom: 0;
+    float: left;
+    overflow: hidden;
+  }
+  .playlist__item:hover {
+    background-color: #31c27c;
+  }
+  .playlist__item:hover + .playlist__item_box > .playlist__title > .btn_opera_menu {
+    transition: .5s ease-in;
+    opacity: 1;
+  }
+  .playlist__item_box{
+    height: auto;
+    margin-right: 0;
+    position: relative;
+    .playlist__title {
+      display: inline-block;
+      position: relative;
+      max-width: 75%;
+      padding: 0 26px;
+      height: 22px;
+      margin-bottom: 0;
+      overflow: hidden;
+      .playlist__title_txt {
+        a {
+          color: #fff;
+        }
+        float: none;
+        display: inline-block;
+        max-width: 100%;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 22px;
+      }
+      .btn_opera_menu {
+        bottom: 23px;
+        top: 2px;
+        display: inline-block;
+        background-position: -180px -100px;
+        right: 0;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=3139b9b10089fcb0bf3725ac66b82a40);
+      }
+    }
+    .playlist__author {
+      margin-bottom: 32px;
+      line-height: 18px;
+      a {
+        color: #c1e9d5;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 22px;
+        // &:hover {
+        //   color: #c1e9d5;
+        // }
+      }
+    }
+  }
+  .mod_cover {
+    opacity: .9;
+  }
+  .mod_cover:hover > .js_album > .playlist__pic {
+    transform: scale(1.07);
+  }
+  .mod_cover:hover > .js_album > .mod_cover__mask {
+    opacity: .4;
+  }
+  .mod_cover:hover > .js_album > .mod_cover__icon_play {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .mod_cover:hover + .playlist__title > .btn_opera_menu {
+    transition: .5s ease-in;
+    opacity: 1;
+  }
+  .mod_cover:hover + .playlist__author > .js_singer {
+    color: #fff;
+  }
+  .playlist__cover {
+    margin-bottom: 32px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 100%;
+    .playlist__pic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: scale(1) translateZ(0);
+      transition: transform .75s;
+    }
+    .mod_cover__mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    .mod_cover__icon_play {
+      background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/cover_play.png?max_age=2592000&v=fa72193fd8d5000e90837380d6be93ea);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -35px;
+      width: 70px;
+      height: 70px;
+      opacity: 0;
+      transform: scale(.7);
+      transition-property: opacity,transform;
+      transition-duration: .5s;
+      zoom: 1;
+    }
+  }
+}
+.mod_slide {
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.slide__item {
+  display: inline-block;
+}
+
+// 左右箭头
+.mod_slide_action {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .slide_action {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .slide_action--left {
+    left: 0;
+  }
+  .slide_action__btn--left {
+    left: 0;
+    transform: translateX(-100%);
+    .slide_action__arrow--left {
+      left: 28px;
+      background-position: -180px 0;
+    }
+  }
+  .slide_action--right {
+    right: 0;
+  }
+  .slide_action__btn--right {
+    right: 0;
+    transform: translateX(100%);
+    .slide_action__arrow--right {
+      right: 28px;
+      background-position: -160px 0;
+    }
+  }
+  .slide_action__btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -54px;
+    width: 72px;
+    height: 108px;
+    background: rgba(153, 153, 153, .4);
+    transition-property: opacity, transform;
+    transition-duration: .5s;
+    z-index: 2;
+  }
+  .slide_action__btn:hover {
+    transition: .6s ease-out;
+    background: #31c27c;
+  }
+  .slide_action__arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/icon_sprite.png?max_age=2592000&v=3139b9b10089fcb0bf3725ac66b82a40);
+    width: 11px;
+    height: 18px;
+  }
+}
+// 点线
+.mod_slide_switch {
+  bottom:24px;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  .slide_switch__item {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    padding: 10px 0;
+    margin: 0 5px;
+    .slide_switch__bg {
+      display: block;
+      width: 100%;
+      background: rgba(255,255,255,.3);
+      height: .5px;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+.slide_switch__item--current .slide_switch__bg, .slide_switch__item:hover .slide_switch__bg {
+  filter: none;
+  background-color: #fff;
+}

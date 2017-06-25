@@ -1,0 +1,57 @@
+@media screen and (max-height: 800px) {
+  .mod_profile_unlogin {
+    height: 622px;
+    background: url(https://y.gtimg.cn/mediastyle/yqq/img/bg_profile_unlogin.jpg) 50% no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
+.play .profile_unlogin__btn, .play .profile_unlogin__desc,
+.play .profile_unlogin__tit {
+  opacity: 1;
+}
+.profile_unlogin__btn, .profile_unlogin__desc,
+.profile_unlogin__tit {
+  -webkit-transform: all 1s;
+  transform: all 1s;
+}
+.profile_unlogin__tit {
+  margin-top: 210px;
+  width: 735px;
+  height: 64px;
+  background-position: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/profile_tit.png?max_age=2592000&v=70fa6a47cc15d1acecae39dda6821428);
+}
+.profile_unlogin__desc {
+  width: 345px;
+  height: 30px;
+  background-position: 0 -70px;
+  margin-top: 30px;
+  margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://y.gtimg.cn/mediastyle/yqq/img/profile_tit.png?max_age=2592000&v=70fa6a47cc15d1acecae39dda6821428);
+}
+.profile_unlogin__btn {
+  line-height: 49px;
+  display: block;
+  font-size: 20px;
+  height: 48px;
+  width: 128px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #31c27c;
+  background-color: #31c27c;
+  &:hover {
+    color: #fff;
+  }
+}
+.section_inner {
+  text-align: center;
+}
+.play .profile_unlogin__btn {
+  height: 48px;
+}

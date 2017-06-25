@@ -1,0 +1,34 @@
+.mod_index--event .section_inner {
+  height: 610px;
+}
+.index__tit_sprite {
+  background-position: 0 -240px;
+}
+.index__line {
+  background-color: #000;
+}
+.mod_slide {
+  overflow: hidden;
+  margin-bottom: 25px;
+  .event_list {
+    width: 100%;
+    height: 325px;
+  }
+  .slide__list {
+    position: relative;
+    font-size: 0;
+    .event_list__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 751px;
+      height: 300px;
+      opacity: .8;
+      z-index: 1;
+      transition: all 300ms ease-out;
+    }
+    .slide__item {
+      display: inline-block;
+    }
+  }
+}
