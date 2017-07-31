@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="app">
+    <div class="fruit">{{'apple' | join('watermelon', 'orange', 'cherry')}}</div> 
+</div>
+<script type="text/javascript" src="../lib/vue.min.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+	    el: '#app',
+	    filters: {
+	        join: function () {
+	            return Array.prototype.join.call(arguments, ', ');
+	        }
+	    }
+	});
+</script>
+</body>
+</html>
