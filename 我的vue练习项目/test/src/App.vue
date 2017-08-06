@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-      <input type="button" value="增加" @click="increment" />
-      <div class="">
-          现在的数字{{count}}
-      </div>
+      <cnodeHead></cnodeHead>
+      <router-view></router-view>
   </div>
 
 </template>
 
 <script>
-import {mapGetters, mapActions} from 'vuex'
+import cnodeHead from './components/cNodeHeader.vue';
 export default {
-  name: 'app',
-  components:{
+    name: 'app',
+    data() {
+      return {
 
-  },
-  data () {
-    return {
-      msg: 'zuobaiquan'
+      }
+    },
+    components: {
+        cnodeHead
     }
-  },
-  computed:mapGetters(['count']),
-  methods:mapActions(['increment'])
-}
+};
 </script>
 
 <style lang="scss">
