@@ -5,37 +5,19 @@
         <img :src='userInfo.avatar_url' :title='userInfo.loginname'>
         <span>{{userInfo.loginname}}</span>
       </div>
-      <p>
-        <!-- <icon name='score' scale='4'></icon> -->
-        <span>积分：</span>{{userInfo.score}}
-      </p>
-      <!-- <icon name='github' scale='4'></icon><span>Github：</span> https://github.com/{{userInfo.githubUsername}}</p> -->
-      <!-- <p><icon name='time' scale='4'></icon><span>注册时间：</span>{{dealCommentTime(userInfo.create_at)}}</p> -->
+      <p><span>积分：</span>{{userInfo.score}}</p>
     </div>
 
-    <!-- <div class='recentReplies'  v-loading.lock='loading'>
+    <div class='recentReplies'  v-loading.lock='loading'>
         <p>最近参与的话题</p>
         <template v-for='(item,index) of userInfo.recent_replies'>
           <div v-if='index < 4'>
-            <router-link :to='{name: "UserRoute",params:{name: item.author.loginname}}'>
+            <router-link :to='{name: "User",params:{name: item.author.loginname}}'>
                 <img :src='item.author.avatar_url' :title='item.author.loginname'>
             </router-link>
-            <router-link :to='{name: "ArticleRoute",params:{id:item.id}}'><p class='userTitle'>{{item.title}}</p></router-link>
           </div>
         </template>
-    </div> -->
-
-    <!-- <div class='recentTopics'  v-loading.lock='loading'>
-        <p>最近创建的话题</p>
-        <template v-for='(item,index) of userInfo.recent_topics'>
-            <div v-if='index < 5 && item'>
-                <img :src='item.author.avatar_url' :title='item.author.loginname'>
-                <router-link :to='{name: "ArticleRoute",params:{id:item.id}}'>
-                    <p class='userTitle'>{{item.title}}</p>
-                </router-link>
-            </div>
-        </template>
-    </div> -->
+    </div>
 </div>
 </template>
 
@@ -58,9 +40,7 @@
             });
         },
         methods: {
-            // dealCommentTime(time) {
-            //     return String(time).match(/.{10}/)[0].replace(/.{2}/, '').replace(/[T]/, ' ');
-            // },
+
         },
         beforeRouteUpdate(to, from, next) {
             this.$http({

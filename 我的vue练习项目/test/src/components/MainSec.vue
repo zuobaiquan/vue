@@ -4,7 +4,6 @@
         <div v-for='item of content'>
             <router-link :to='{name: "User",params:{name: item.author.loginname}}'><img :src='item.author.avatar_url' :title='item.author.loginname'></router-link>
             <div class='textDiv'>
-                <!-- <router-link :to='{name:"ArticleRoute",params:{id:item.id}}'>{{item.title}}</router-link> -->
                 <div class='stuff'>
                     <span>回复：{{item.reply_count}}</span>
                     <span>创建于：{{dealTime}}</span>
@@ -31,7 +30,7 @@
             };
         },
         components: {
-            
+
         },
         methods: {
             scrollMethod() {
@@ -61,7 +60,7 @@
             },
         },
         mounted() {
-            //window.addEventListener('scroll', this.scrollMethod);
+            window.addEventListener('scroll', this.scrollMethod);
         },
         computed: {
             dealTime() {
