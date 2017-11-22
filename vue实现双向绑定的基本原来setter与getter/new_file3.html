@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//参见：http://www.jb51.net/article/100815.htm
+			var obj = {
+				prop1: "this is prop1",
+				prop2: "this is prop2"
+			};
+			var obj2 = {};
+			
+			function defineRactive(obj,key,val){
+				Object.defineProperty(obj,key,{
+					get: function(){
+						return val;
+					},
+					set: function(newVal){
+						if(newVal===val) return;
+						val = newVal;
+					}
+				});
+			}
+			function observe(obj,vm){
+				Object.keys(obj).forEach(function(key){
+					defineRactive(vm,key,obj[key]);
+				});
+			}
+			
+			observe(obj,obj2);
+			
+			console.log(obj2.prop1);//"this is prop1"
+			console.log(obj2.prop2);//"this is prop2"
+			
+			obj2.prop1 = "this is a new prop1";
+			console.log(obj2.prop1);//"this is a new prop1"
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

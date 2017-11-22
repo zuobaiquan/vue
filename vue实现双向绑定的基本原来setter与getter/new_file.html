@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//参考阅读：
+			//有关js 的 defineProperty函数 getter setter   http://www.cnblogs.com/weiweitodo/p/6574946.html
+			//浅谈JavaScript 数据属性和访问器属性   http://www.jb51.net/article/91698.htm
+			//JS对象高级属性：数据属性与访问器属性   http://blog.csdn.net/yu766588220/article/details/51556628
+			var obj = {
+				_name: 'zhangzh',
+			}
+			//对象是由属性和值这种键值对的方式构建的，值可以是基本值，函数和对象。我们常用的键值对的搭配方式就是使用了属性的数据属性定义的，即key:value的方式，
+			//而此外属性也可以是采用访问器属性定义，即是用set和get的方式自定义属性值得获取和赋值的方式，且每次对访问器属性进行获取（obj.key）和赋值（obj.key = value）,
+			//都会触发set和get函数，这也是vue实现数据双向绑定的基础。
+			//此外需要注意，数据属性一般用于存储数据数值，而访问器属性一般进行get/set操作，不能直接存储数据数值。故而需要采用中间属性_name存储name属性的值
+			Object.defineProperty(obj,'name',{
+				get: function(){
+					return this._name;
+				},
+				set: function(value){
+					this._name = value;
+					alert('信息被更改了')
+				}
+			})
+			setTimeout(function(){
+				obj.name = '新数据';
+				alert(obj.name)
+			},1000)
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

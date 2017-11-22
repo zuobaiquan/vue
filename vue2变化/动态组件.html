@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app" style="text-align: center;">
+			<div style="font-size: 12px;">单选切换</div>
+			<input type="radio" name="show" id="" value="home" v-model="picked"/>
+			<input type="radio" name="show" id="" value="about" v-model="picked"/>
+			<input type="radio" name="show" id="" value="relate" v-model="picked"/>
+			<keep-alive><!--将component元素包含在keep-alive元素内可以缓存非活动组件，避免切换重新渲染-->
+				<component :is="whichShow"></component>
+			</keep-alive>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+		//动态组件，即多个组件挂载在一个保留的<component></component>上，通过is特性动态切换显示不同组件
+
+		//实例化Vue实例
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				picked: 'home'
+			},
+			computed: {
+				whichShow: function(){
+					return this.picked;
+				}
+			},
+			components: {
+				home: {
+					template: "<div style='font:bold 24px/48px microsoft yahei;background: #f9f9f9;'>HOME</div>"
+				},
+				about: {
+					template: "<div style='font:bold 24px/48px microsoft yahei;background: #f9f9f9;'>ABOUT</div>"
+				},
+				relate: {
+					template: "<div style='font:bold 24px/48px microsoft yahei;background: #f9f9f9;'>RELATE</div>"
+				}
+			}
+		})
+		
+	</script>
+</html>
