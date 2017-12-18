@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style type="text/css">
+.bounce-enter-active {
+  animation: bounce-in 2s;
+}
+.bounce-leave-active {
+  animation: bounce-in 2s;
+}
+@keyframes bounce-in {
+  0% {
+    color:red;
+  }
+  50% {
+    color:green;
+  }
+  100% {
+    color:yellow;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="demo">
+      <button @click="show =!show">切换</button>
+      <transition name="bounce">
+        <p v-if="show">hello</p>
+      </transition>
+  </div>
+<script src="../lib/vue.min.js"></script>
+<script>
+new Vue({
+  el: '#demo',
+  data: {
+    show: true
+  }
+})
+</script>
+</body>
+</html>
