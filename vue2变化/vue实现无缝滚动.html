@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>vue实现无缝滚动</title>
+<style type="text/css">
+  ol,ul{  list-style:none; margin:0; }
+  li{ height:25px;  }
+</style>
+</head>
+<body>
+<div id="demo" ref="marqueebox" style="overflow: hidden; width: 322px; height: 50px">
+    <ul id="demo1" ref="marqueelist1">
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+    </ul>
+    <ul id="demo2" ref="marqueelist2"></ul>
+</div>
+<script type="text/javascript" src="https://cdn.bootcss.com/vue/2.4.4/vue.min.js"></script>
+<script type="text/javascript">
+var speed1=0;
+var MyMar1;
+new Vue({
+       el:'#demo',
+       data:{
+           msg:'welcome vue2.0'
+       },
+       methods:{
+          keepMarquee(that){
+            speed1=30;//滚段速度
+            that.$refs.marqueelist2.innerHTML=that.$refs.marqueelist1.innerHTML;
+            function Marquee1(){
+              //当demo滚动至demo2的交界处。与就是与demo2重合时。offsetHeight与scrollTop刚好相等
+              if(that.$refs.marqueelist2.offsetHeight-that.$refs.marqueebox.scrollTop<=0){
+                that.$refs.marqueebox.scrollTop-=that.$refs.marqueelist2.offsetHeight;
+              }
+              else{
+                //demo开始重新移动
+                that.$refs.marqueebox.scrollTop++;
+              }
+            }
+            //setInterval让Marquee1方法每隔多少秒执行一次，并把返回的调用次数ID
+            MyMar1=setInterval(Marquee1,speed1);
+            //当鼠标移动demo上面时。调用clearInterval清除MyMar1.这样图片便不会在移动了。移到图片时，第一行和第二行的图片都会停止
+            that.$refs.marqueebox.onmouseover=function(){
+              clearInterval(MyMar1);
+            }
+            //当鼠标移除demo时,重新setInterval让方法执行，这样图片会继续移动
+            that.$refs.marqueebox.onmouseout=function(){
+              MyMar1=setInterval(Marquee1,speed1);
+            }
+         }
+      },
+      mounted(){
+        this.keepMarquee(this);
+      }
+   });
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<my-component v-model='result'></my-component>
+			<my-component2 :counter='codeLength'></my-component2>
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+		//兄弟组件的通信也是通过事件侦听的方式，只是此时就不是在html的组件标签上v-on侦听，而是通过一个空的Vue实例作为事件总线来注册事件
+		//通过空实例注册事件得方式适用于简单兄弟组件之间得访问，复杂得情况需要使用【状态管理模式vuex】
+		
+		//空得Vue实例
+		var station = new Vue();
+		//注册一个事件
+		station.$on('input',function(data){
+			vm.codeLength = data.length;
+		})
+		
+		Vue.component('my-component',{//tagName,options
+			props: ['value'],
+			template: '<input type="text" v-bind:value="value" v-on:input="changeVal($event.target.value)"/>',
+			data: function(){
+				return {
+					//val: '',
+				}
+			},
+			methods: {
+				changeVal: function(value){
+					station.$emit('input',value);//触发input事件
+				}
+			}
+		})
+		
+		Vue.component('my-component2',{//tagName,options
+			props: ['counter'],
+			template: '<span>{{counter}}</span>',
+			data: function(){
+				return {
+					//val: '',
+				}
+			}
+		})
+		//实例化Vue实例
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				result: '输入字符右侧组件输出长度',
+				codeLength: 0
+			}
+		})
+		
+	</script>
+</html>
