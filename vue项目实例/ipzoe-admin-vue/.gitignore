@@ -1,0 +1,14 @@
+
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+
+
+.idea/
+
+*.ipr
+*.iws
+*.log
+*.zip
+*.DS_Store
