@@ -4,6 +4,7 @@ import parent01 from '@/components/01/parent'
 import parent02 from '@/components/02/parent'
 import parent03 from '@/components/03/parent'
 import testcustom from '@/components/custom/test'
+import testmixins from '@/components/mixins/mixins'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/custom',
       name: 'custom',
       component: testcustom
+    },
+    {
+      path: '/mixins',
+      name: 'mixins',
+      component: testmixins
     }
   ]
 })
