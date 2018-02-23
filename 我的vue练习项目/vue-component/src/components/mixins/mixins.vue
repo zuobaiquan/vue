@@ -1,6 +1,6 @@
 <template>
-<div class="">
-  sss
+<div>
+  测试用例看控制台信息
 </div>
 </template>
 <script>
