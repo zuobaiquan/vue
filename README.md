@@ -1,22 +1,4 @@
-我的项目例子
 
-财经日历 https://zuobaiquan.github.io/vue/lib/dist/index.html#/
-
-正式线预览地址 https://emdatahkush5.eastmoney.com/view/financeCalendar.html#/    
-
-
-
-个股诊断项目正式线地址：https://emstockdiag.eastmoney.com/html/rank.html#/index
-
-
-
-自写移动端组件 https://zuobaiquan.github.io/vue/lib/vue-mobile/dist/#/
-
-自写PC端组件 https://zuobaiquan.github.io/vue/lib/vue-pc/dist/#/
-
-
-
-推荐简历模板：https://lxchuan12.github.io/works/resume/
 
 # 内容 
 
