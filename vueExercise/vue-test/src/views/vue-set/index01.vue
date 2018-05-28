@@ -20,10 +20,18 @@ export default {
   //   this.arrInfo[0]={'name':'zuobaiquan01','age':22}
   // },
   mounted(){
-    this.arrInfo[0]={'name':'zuobaiquan02','age':22}
+    //this.arrInfo[0]={'name':'zuobaiquan02','age':22}
     //正确做法
     //this.arrInfo[0].name='zuobaiquan02'
     //this.arrInfo[0].age=23
+    //
+    //正确做法二 通过splice()方法，删除某个元素后，再添加一个元素，达到“赋值”的效果：
+    // var newArrItem={'name':'zuobaiquan02','age':24}
+    // this.arrInfo.splice(0, 1, newArrItem);
+
+    //正确做法三 利用vue内置属性 set
+    var newArrItem={'name':'zuobaiquan02','age':24}
+    this.$set(this.arrInfo,0,newArrItem)
   }
 }
 </script>

@@ -15,9 +15,9 @@ export default new Router({
       component: bargraph
     },
     {
-      path: '/vueset',
-      name: 'vueset',
-      component: vueset
+      path: '/vueset1',
+      name: 'vueset1',
+      component: vueset1
     }
   ]
 })
