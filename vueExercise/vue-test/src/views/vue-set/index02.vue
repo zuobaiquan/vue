@@ -21,11 +21,9 @@ export default {
   // },
   mounted(){
     this.arrInfo[0]={'name':'zuobaiquan02','age':22}
-  },
-  methods:{
-    handleClick(index){
-      // this.arrInfo[index].name='zuobaiquan01'
-    }
+    //正确做法
+    //this.arrInfo[0].name='zuobaiquan02'
+    //this.arrInfo[0].age=23
   }
 }
 </script>
