@@ -35,10 +35,10 @@ export default {
         maxNegative=v.number;
       }
     });
+    let maxnumber=Math.abs(this.dataListArr[maxIndex].number);
     this.$nextTick(function () {
       document.querySelector('.line-chart').style.marginTop=-(maxPositive-maxNegative)/20+'rem';
     })
-    let maxnumber=Math.abs(this.dataListArr[maxIndex].number);
     setTimeout(function(){
       this.dataListArr.forEach(function(value,index){
           value.percentNum=Math.abs(value.number)/maxnumber;
