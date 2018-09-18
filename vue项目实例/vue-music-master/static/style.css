@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?78zhmr');
+  src:  url('fonts/icomoon.eot?78zhmr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?78zhmr') format('truetype'),
+    url('fonts/icomoon.woff?78zhmr') format('woff'),
+    url('fonts/icomoon.svg?78zhmr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-one_circle:before {
+  content: "\e900";
+}
+.icon-like:before {
+  content: "\e901";
+}
+.icon-next_song:before {
+  content: "\e902";
+}
+.icon-circle_play:before {
+  content: "\e903";
+}
+.icon-pause:before {
+  content: "\e904";
+}
+.icon-random_play:before {
+  content: "\e905";
+}
+.icon-pre_song:before {
+  content: "\e906";
+}
+.icon-player:before {
+  content: "\e907";
+}
+.icon-back:before {
+  content: "\e908";
+  color: #1296db;
+}
+.icon-earphone:before {
+  content: "\e910";
+}
