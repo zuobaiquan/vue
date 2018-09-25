@@ -84,7 +84,7 @@
       },
       rightTextTouchEnd() {
         this.rightClick = false;
-      },
+      }
     },
     computed: {
       width() {
