@@ -34,6 +34,11 @@ export default new Router({
       path: '/mixins',
       name: 'mixins',
       component: testmixins
+    },
+    {
+      path: '/range',
+      name: 'range',
+      component: () => import('@/components/range/test')
     }
   ]
 })
