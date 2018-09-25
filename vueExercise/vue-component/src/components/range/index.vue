@@ -1,5 +1,5 @@
 <template>
-  <div class="myRange-container">
+  <div class="range-container">
     <div class="base_range_div"></div>
     <div class="now_range_div" id="nowRange"></div>
     <div class="base_text_div left_text_div" :class="{check_text_div:leftClick}" id="leftText"
@@ -15,16 +15,16 @@
        {{rightText}}
     </div>
     <div class="base_text_div left_bottom_div" id="leftImg">
-      <img src="../../assets/range.png"
+      <span
         @touchstart.stop.prevent="leftTextTouchStart"
         @touchmove.stop.prevent="leftTextTouchMove"
-        @touchend.stop.prevent="leftTextTouchEnd">
+        @touchend.stop.prevent="leftTextTouchEnd"></span>
     </div>
     <div class="base_text_div right_bottom_div" id="rightImg">
-      <img src="../../assets/range.png"
+      <span
         @touchstart.stop.prevent="rightTextTouchStart"
         @touchmove.stop.prevent="rightTextTouchMove"
-        @touchend.stop.prevent="rightTextTouchEnd">
+        @touchend.stop.prevent="rightTextTouchEnd"></span>
     </div>
   </div>
 </template>
@@ -54,9 +54,10 @@
         if (clientX >= 0) {
           if (this.left + this.right <= this.rangeWidth) {
             this.leftWidth = clientX;
-            $('#nowRange').css({'left': this.left, 'width': this.width});
-            $('#leftText').css({'left': this.left});
-            $('#leftImg').css({'left': this.left});
+            document.querySelector("#nowRange").style.left=this.left+'px'
+            document.querySelector("#nowRange").style.width=this.width+'px'
+            document.querySelector("#leftText").style.left=this.left+'px'
+            document.querySelector("#leftImg").style.left=this.left+'px'
             this.$emit('leftChange', this.leftText);
           }
         }
@@ -73,9 +74,10 @@
         if (clientX <= this.rangeWidth) {
           this.rightWidth = this.rangeWidth - clientX;
           if (this.left + this.right <= this.rangeWidth) {
-            $('#nowRange').css({'width': this.width});
-            $('#rightText').css({'right': this.right});
-            $('#rightImg').css({'right': this.right});
+            document.querySelector("#nowRange").style.right=this.right+'px'
+            document.querySelector("#nowRange").style.width=this.width+'px'
+            document.querySelector("#rightText").style.right=this.right+'px'
+            document.querySelector("#rightImg").style.right=this.right+'px'
             this.$emit('rightChange', this.rightText);
           }
         }
@@ -111,7 +113,7 @@
   }
 </script>
 <style scoped lang="scss">
-  .myRange-container {
+  .range-container {
     width: 90%;
     margin: 1rem auto;
     position: relative;
@@ -130,36 +132,38 @@
     }
     .base_text_div {
       position: absolute;
-      color: white;
-      padding: 0.05rem 0.1rem;
-      font-size: 1.2rem;
-      img {
-        width: 2rem;
+      color: #fff;
+      padding: 0.2rem;
+      span {
+        width:15px;
+        height: 19px;
+        display: inline-block;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAATCAMAAAB4HKeYAAAAV1BMVEUAAAARqYMRqoMRqIMRqYQPrIgRqYQRq4gRqYMRqYMRqYIRqYMRp38RqYURqYMRqYMRqYMSpn4Rp4ARqIERqYMQq4UQqYIQp4QQrIoRsZERqYMRqIERqoPVJ/D8AAAAGnRSTlMAQ5De101JNfrt5bGkaUQ/KL28hYJ2djEUEhhAvvcAAABqSURBVBjTrc/JEYNAEENRMSs7eLe7O/84zdSIggD4J72jUHOdw9H3ZqL3384cVEQsfCpjp1LSPhZOKkxtAh5ypPpEa3KqRRzdQAxuTNha6RW1hV7omZ7phm4ucqITnesjy2Cv3gfv32X+AU+nDyDGtXrlAAAAAElFTkSuQmCC) 0 0/100% 100% no-repeat;
       }
     }
-    .left_text_div {
+    .left_text_div{
       left: 0;
-      top: -0.8rem;
-      transform: translateX(-50%);
+      top: 50%;
+      transform: translate(-50%,-50%);
       background: green;
     }
     .check_text_div {
       background: #e0620d !important;
       padding: 0.08rem 0.2rem;
     }
-    .right_text_div {
+    .right_text_div{
       right: 0;
-      top: -0.8rem;
-      transform: translateX(50%);
+      top: 50%;
+      transform: translate(50%,-50%);
       background: green;
     }
-    .left_bottom_div {
-      top: 1rem;
+    .left_bottom_div{
+      top: 1.2rem;
       left: 0;
       transform: translateX(-50%);
     }
     .right_bottom_div {
-      top:1rem;
+      top:1.2rem;
       transform: translateX(50%);
       right: 0;
     }
