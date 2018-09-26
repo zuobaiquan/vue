@@ -49,8 +49,8 @@
         this.leftClick = true;
       },
       leftTextTouchMove(e) {
-        let touch = e.changedTouches[0];
-        let clientX = touch.clientX;
+        let clientX = e.changedTouches[0].clientX;
+        console.log(e.changedTouches[0]);
         if (clientX >= 0) {
           if (this.left + this.right <= this.rangeWidth) {
             this.leftWidth = clientX;
@@ -69,8 +69,7 @@
         this.rightClick = true;
       },
       rightTextTouchMove(e) {
-        let touch = e.changedTouches[0];
-        let clientX = touch.clientX;
+        let clientX = e.changedTouches[0].clientX;
         if (clientX <= this.rangeWidth) {
           this.rightWidth = this.rangeWidth - clientX;
           if (this.left + this.right <= this.rangeWidth) {
