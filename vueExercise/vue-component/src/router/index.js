@@ -5,7 +5,6 @@ import parent02 from '@/components/02/parent'
 import parent03 from '@/components/03/parent'
 import testcustom from '@/components/custom/test'
 import testmixins from '@/components/mixins/mixins'
-
 Vue.use(Router)
 
 export default new Router({
@@ -39,6 +38,11 @@ export default new Router({
       path: '/range',
       name: 'range',
       component: () => import('@/components/range/test')
+    },
+    {
+      path: '/input',
+      name: 'input',
+      component: () => import('@/components/myinput/test')
     }
   ]
 })
