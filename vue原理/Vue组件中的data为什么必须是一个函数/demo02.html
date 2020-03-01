@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+  var Component= function() {}
+  Component.prototype.data = function() {
+    return {
+       a: 1,
+       b: 2
+    }
+  }
+
+  var component1 = new Component()
+  var component2 = new Component()
+  var component3 = new Component()
+  component1.data.b = 3
+//用function return 其实就相当于申明了新的变量，相互独立，自然就不会有这样的问题；
+//js在赋值object对象时，是直接一个相同的内存地址。所以为了每个组件的data独立，采用了这种方式
+
+  </script>
+</html>

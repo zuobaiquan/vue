@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+
+  //先假设将data作为一个对象:
+  //组件是可以被复用的，那么注册了一个组件本质上就是创建了一个组件构造器的引用，而真正当我们使用组件的时候才会去将组件实例化，
+  //创建一个组件
+  var Component= function() {}
+
+  Component.prototype.data = {
+    a: 1,
+    b: 2
+  }
+
+  // 使用组件
+  var component1 = new Component()
+  var component2 = new Component()
+
+  component1.data.b = 3
+  // component1.data.b = 3
+  // component2.data.b // 3
+
+  console.log("component1",component1.data)
+  console.log("component2",component2.data)
+
+  //我们可以发现当我们使用组件的时候，虽然data是在构造器的原型链上被创建的，
+  //但是实例化的 component1 和 component2 确是共享同样的data对象,当你修改一个属性的时候，data也会发生改变，这明显不是我们想要的效果。
+
+  </script>
+</html>

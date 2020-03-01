@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+<div id="box">
+  <div ref="hello">
+    <h1>Hello World ~</h1>
+  </div>
+  <button @click="get()">点击</button>
+</div>
+<script src="../../lib/vue.min.js"></script>
+<script>
+    new Vue({
+        el:'#box',
+        data:{
+
+        },
+        methods: {
+          get() {
+
+          }
+        },
+        mounted() {
+         console.log(333);
+         console.log(this.$refs['hello']);
+         this.$nextTick(() => {
+           console.log(444);
+           console.log(this.$refs['hello']);
+         });
+       },
+       created() {
+         console.log(111);
+         console.log(this.$refs['hello']); //undefined
+
+         //先执行 333
+
+         this.$nextTick(() => {
+           console.log(222);
+           console.log(this.$refs['hello']);
+         });
+
+
+         // 输出顺序  11=>33=>22==>44
+       }
+    });
+
+
+    //可以根据打印的顺序看到，在created()钩子函数执行的时候DOM 其实并未进行任何渲染，而此时进行DOM操作并无作用，而在created()里使用this.$nextTick()可以等待dom生成以后再来获取dom对象
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<body>
+<div id="box">
+  <div ref="hello">
+    <h1>{{ value }}</h1>
+  </div>
+  <button @click="get()">点击</button>
+</div>
+<script src="../../lib/vue.min.js"></script>
+<script>
+    new Vue({
+        el:'#box',
+        data:{
+          value:'Hello World ~'
+        },
+        methods: {
+          get() {
+            this.value = '你好啊';
+            console.log(this.$refs['hello'].innerText); // Hello World ~
+            this.$nextTick(() => {
+              console.log(this.$refs['hello'].innerText); // 你好啊
+            });
+          }
+        },
+        mounted() {
+
+       },
+       created() {
+
+       }
+    });
+
+
+    //在方法里直接打印的话， 由于dom元素还没有更新， 因此打印出来的还是未改变之前的值，而通过this.$nextTick()获取到的值为dom更新之后的值
+    //this.$nextTick()将回调延迟到下次 DOM 更新循环之后执行。在修改数据之后立即使用它，然后等待 DOM 更新。它跟全局方法 Vue.nextTick 一样，不同的是回调的 this 自动绑定到调用它的实例上。
+
+    //this.$nextTick()在页面交互，尤其是从后台获取数据后重新生成dom对象之后的操作有很大的优势
+
+
+</script>
+</body>
+</html>
