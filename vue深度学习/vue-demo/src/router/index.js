@@ -7,13 +7,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'testView',
       component: () => import('@/views/test')
     },
     {
       path: '/watch',
-      name: 'watchView',
       component: () => import('@/views/watchDemo')
+    },
+    {
+      path: '/computed',
+      component: () => import('@/views/computedDemo')
+    },
+    {
+      path: '/customVModel',
+      component: () => import('@/views/CustomVModel/index')
+    },
+    {
+      path: '/nextTick',
+      component: () => import('@/views/NextTick')
     }
   ]
 })
