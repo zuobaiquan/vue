@@ -11,6 +11,10 @@
 
 <script>
 
+// 注意：
+
+// Vue是 异步渲染 
+
 // data 改变，dom不会 立马 渲染
 
 //$nextTick 会在DOM渲染之后触发，以获取最新的DOM节点
