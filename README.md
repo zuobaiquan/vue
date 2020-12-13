@@ -1,6 +1,6 @@
 如果觉得对你帮助，记得打赏哦。
 
-![591517660778_.pic](https://zuobaiquan.com/blogImg/CSS/pay.png)
+![591517660778_.pic](https://camo.githubusercontent.com/ed18472bf8de411e7406462f8db64f3007dd0ae8/68747470733a2f2f7a756f6261697175616e2e6769746875622e696f2f626c6f67496d672f3230323031312f706179312e706e67)
 
 # 内容 
 
