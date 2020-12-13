@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { ref, computed, reactive, toRefs, watch } from 'vue';
+import { ref, computed, reactive, toRefs, watch } from 'vue'
 interface DataProps {
   count: number;
   double: number;
@@ -33,24 +33,24 @@ interface DataProps {
 }
 export default {
   name: 'Reactive',
-  setup() {
+  setup () {
     const data: DataProps = reactive({
       count: 0,
       double: computed(() => data.count * 2),
       increase: () => {
-        data.count++;
+        data.count++
       },
       // 测试vue2 响应式 盲区
       numbers: [1, 2, 3],
       person: {},
-    });
-    data.numbers[0] = 100;
-    data.person.name = 'zuobaiquan';
+    })
+    data.numbers[0] = 100
+    data.person.name = 'zuobaiquan'
 
-    const greeting = ref('welcome...');
+    const greeting = ref('welcome...')
     const updateGreeting = () => {
-      greeting.value += 'welcome!!!';
-    };
+      greeting.value += 'welcome!!!'
+    }
     // watch(greeting, (newVal, oldVal) => {
     //   console.log('newVal', newVal);
     //   console.log('oldVal', oldVal);
@@ -59,10 +59,10 @@ export default {
     // 监听 count 值 不能这么写[greeting, data.count] 提示 A watch source can only be a getter/effect function
     // 必须是 响应式对象 [greeting, () => data.count]
     watch([greeting, () => data.count], (newVal, oldVal) => {
-      console.log('newVal', newVal);
-      console.log('oldVal', oldVal);
-      document.title = 'update' + greeting.value;
-    });
+      console.log('newVal', newVal)
+      console.log('oldVal', oldVal)
+      document.title = 'update' + greeting.value
+    })
     //下面这种写法无法更新数据
     // return {
     //   ...data
@@ -74,7 +74,7 @@ export default {
       ...toRefs(data),
       greeting,
       updateGreeting,
-    };
+    }
   },
-};
+}
 </script>

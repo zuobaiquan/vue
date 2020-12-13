@@ -8,9 +8,7 @@ module.exports = {
   extends: [
     "plugin:vue/vue3-essential",
     "eslint:recommended",
-    "@vue/typescript/recommended",
-    "@vue/prettier",
-    "@vue/prettier/@typescript-eslint"
+    "@vue/typescript/recommended"
   ],
 
   parserOptions: {
@@ -24,7 +22,7 @@ module.exports = {
     "no-console": 0,
     "comma-dangle": [2, "always-multiline"],
     "max-len": 0,
-    "space-before-function-paren": [2, "always"],
+    "space-before-function-paren": 0,
     "no-unused-expressions": [0, {
       "allowShortCircuit": true,
       "allowTernary": true
@@ -42,12 +40,12 @@ module.exports = {
     "global-require": 0,
     "import/no-unresolved": 0,
     "import/extensions": 0,
+    'no-irregular-whitespace': 0,
+    "comma-dangle": ["error", "never"], //是否允许对象中出现结尾逗号
   },
   'extends': [
     'plugin:vue/essential',
     'eslint:recommended',
-    '@vue/typescript/recommended',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint'
+    '@vue/typescript/recommended'
   ]
 };

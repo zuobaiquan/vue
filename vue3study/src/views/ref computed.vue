@@ -7,22 +7,22 @@
 </template>
 
 <script lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed } from 'vue'
 export default {
   name: 'Home',
-  setup() {
-    const count = ref(0);
+  setup () {
+    const count = ref(0)
     const double = computed(() => {
-      return count.value * 2;
-    });
+      return count.value * 2
+    })
     const increase = () => {
-      count.value++;
-    };
+      count.value++
+    }
     return {
       count,
       increase,
       double,
-    };
+    }
   },
-};
+}
 </script>

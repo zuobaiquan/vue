@@ -21,7 +21,7 @@ onRenderTriggered 当执行update操作时，会检查哪个响应式数据导�
 </template>
 
 <script lang="ts">
-import { ref, computed, reactive, toRefs, onMounted, onUpdated } from 'vue';
+import { computed, reactive, toRefs, onMounted, onUpdated } from 'vue'
 interface DataProps {
   count: number;
   double: number;
@@ -33,25 +33,25 @@ interface DataProps {
 }
 export default {
   name: 'Reactive',
-  setup() {
+  setup () {
     onMounted(() => {
-      console.log('onMounted');
-    });
+      console.log('onMounted')
+    })
     onUpdated(() => {
-      console.log('onUpdated');
-    });
+      console.log('onUpdated')
+    })
     const data: DataProps = reactive({
       count: 0,
       double: computed(() => data.count * 2),
       increase: () => {
-        data.count++;
+        data.count++
       },
       // 测试vue2 响应式 盲区
       numbers: [1, 2, 3],
       person: {},
-    });
-    data.numbers[0] = 100;
-    data.person.name = 'zuobaiquan';
+    })
+    data.numbers[0] = 100
+    data.person.name = 'zuobaiquan'
     //下面这种写法无法更新数据
     // return {
     //   ...data
@@ -61,7 +61,7 @@ export default {
     // 可以将reactive()创建出来的响应式对象,转换为普通对象
     return {
       ...toRefs(data),
-    };
+    }
   },
-};
+}
 </script>
