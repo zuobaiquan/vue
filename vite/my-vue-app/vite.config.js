@@ -1,7 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 const { createVuePlugin } = require('vite-plugin-vue2')
-import html from 'vite-plugin-html';
 import { viteCommonjs } from '@originjs/vite-plugin-commonjs'
 const { getEntry, srcPath } = require('./config/utils.js')
 const config = require('./config/index.js')
@@ -14,15 +13,7 @@ export default defineConfig({
   base: './',
   plugins: [
     createVuePlugin(),
-    viteCommonjs(),
-    html({
-      inject: {
-        injectData: {
-          injectScript: process.env.NODE_ENV == 'production' ? '<script src="../../config.js"></script>' : null,
-        },
-      },
-      minify: false,
-    })
+    viteCommonjs()
   ],
   resolve: {
     alias: {

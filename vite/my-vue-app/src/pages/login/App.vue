@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       message:'123456'
-    };
+    }
   },
   components:{
     HelloWorld

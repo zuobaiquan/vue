@@ -29,7 +29,7 @@ export default {
 .wrapper{
   div{
     color:red;
-    background: url('../../assets/logo.png') no-repeat;
+    background: url('@/assets/logo.png') no-repeat;
   }
 }
 </style>
