@@ -4,6 +4,7 @@ const { createVuePlugin } = require('vite-plugin-vue2')
 import { viteCommonjs } from '@originjs/vite-plugin-commonjs'
 const { getEntry, srcPath } = require('./config/utils.js')
 const config = require('./config/index.js')
+import htmlPlugin from './config/injectScript'
 
 const pages = getEntry(`${srcPath}/**/*.html`)
 // console.log('pages', pages)
@@ -12,6 +13,9 @@ export default defineConfig({
   root: `${srcPath}/pages`,
   base: './',
   plugins: [
+    htmlPlugin({
+
+    }),
     createVuePlugin(),
     viteCommonjs()
   ],
