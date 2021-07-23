@@ -1,0 +1,45 @@
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
+const { createVuePlugin } = require('vite-plugin-vue2')
+import html from 'vite-plugin-html';
+import { viteCommonjs } from '@originjs/vite-plugin-commonjs'
+const { getEntry, srcPath } = require('./config/utils.js')
+const config = require('./config/index.js')
+
+const pages = getEntry(`${srcPath}/**/*.html`)
+// console.log('pages', pages)
+// https://vitejs.dev/config/
+export default defineConfig({
+  root: `${srcPath}/pages`,
+  base: './',
+  plugins: [
+    createVuePlugin(),
+    viteCommonjs(),
+    html({
+      inject: {
+        injectData: {
+          injectScript: process.env.NODE_ENV == 'production' ? '<script src="../../config.js"></script>' : null,
+        },
+      },
+      minify: false,
+    })
+  ],
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.esm.js',
+      '@': resolve(__dirname, 'src')
+    },
+    // extensions: ['.vue', '.js']
+  },
+  server: {
+    port: 6001,
+    open: true
+  },
+  build: {
+    outDir: `../../${config.outputPath}`, //打包文件名称
+    assetsDir: `${config.assetsDir}`, //打包静态文件的存储地址
+    rollupOptions: {
+      input: pages
+    }
+  }
+})
