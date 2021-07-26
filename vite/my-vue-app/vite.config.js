@@ -14,7 +14,19 @@ export default defineConfig({
   base: './',
   plugins: [
     htmlPlugin({
-
+      favicon: '/favicon.ico',
+      // headScripts: [
+      //   {
+      //     src: '/config.js',
+      //     type: 'text/javascript'
+      //   },
+      // ],
+      scripts: [
+        {
+          src: './main.js',
+          type: 'module'
+        },
+      ]
     }),
     createVuePlugin(),
     viteCommonjs()
