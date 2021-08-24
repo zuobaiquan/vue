@@ -1,8 +1,3 @@
-如果觉得对你帮助，记得打赏哦。
-
-![591517660778_.pic](https://camo.githubusercontent.com/ed18472bf8de411e7406462f8db64f3007dd0ae8/68747470733a2f2f7a756f6261697175616e2e6769746875622e696f2f626c6f67496d672f3230323031312f706179312e706e67)
-
-
 
 * [2021前端会有什么新的变化？](https://www.zhihu.com/question/428128531?content_source_url=https://github.com/vue3/vue3-News)  
 * [2021年前端工程师书单推荐](https://juejin.cn/post/6920428989181870094?content_source_url=https://github.com/vue3/vue3-News)  
