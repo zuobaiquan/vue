@@ -15,6 +15,13 @@ export default new Router({
       name: 'bargraph',
       component: bargraph
     },
+<<<<<<< HEAD
+    // {
+    //   path: '/vueset1',
+    //   name: 'vueset1',
+    //   component: vueset1
+    // }
+=======
     {
       path: '/vueset1',
       name: 'vueset1',
@@ -25,5 +32,6 @@ export default new Router({
       name: 'swiper',
       component: swiper
     }
+>>>>>>> 91ea3d0b76d8533031fb1c1f2e9d49519edb0368
   ]
 })

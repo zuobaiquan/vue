@@ -12,5 +12,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
+  mode:'history',
   template: '<App/>'
 })
