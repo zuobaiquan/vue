@@ -12,7 +12,7 @@ module.exports = {
     commonjs: true
   },
   globals: {
-    
+
   },
   extends: ['plugin:vue/recommended', 'eslint:recommended'],
   plugins: [
