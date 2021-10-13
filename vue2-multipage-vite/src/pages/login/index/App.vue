@@ -1,6 +1,6 @@
 <template>
   <div class="test-wrapper">
-    <p>login</p>
+    <p>login1</p>
     <div class="banner_wrap">
       <img v-for="item in imgList" :key="item" :src="item" alt />
     </div>
