@@ -12,12 +12,12 @@ const mod = require("@/utils/common");
 console.log("mod", mod);
 export default {
   name: "demo",
+  data() {
+    return {};
+  },
   created() {
     console.log(plus(1, 2));
     console.log("test", mod.count);
-  },
-  data() {
-    return {};
   },
   methods: {},
 };

@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 const { createVuePlugin } = require('vite-plugin-vue2')
-import { viteCommonjs } from '@originjs/vite-plugin-commonjs';
-
+import { viteCommonjs, esbuildCommonjs } from '@originjs/vite-plugin-commonjs';
 import { resolve } from 'path'
 import glob from 'glob'
 import VirtualHtml from './pluginHtml'
@@ -18,6 +17,13 @@ function getEntry(globPath) {
 }
 const pages = getEntry(`${srcPath}/**/*.html`)
 export default defineConfig({
+	optimizeDeps: {
+		esbuildOptions: {
+			plugins: [
+				esbuildCommonjs(['weixin-js-sdk'])
+			]
+		}
+	},
 	plugins: [
 		createVuePlugin({
 			jsx: true
@@ -26,8 +32,9 @@ export default defineConfig({
 			pages: pages,
 			indexPage: '/login/index'
 		}),
-		viteCommonjs(),
+		viteCommonjs()
 	],
+
 	assetsInlineLimit: 4096,
 	build: {
 
