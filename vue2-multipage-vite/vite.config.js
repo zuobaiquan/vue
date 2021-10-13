@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 const { createVuePlugin } = require('vite-plugin-vue2')
-import { viteCommonjs, esbuildCommonjs } from './plugin';
+import { viteCommonjs, esbuildCommonjs } from './commonjsplugin';
 import { resolve } from 'path'
 import glob from 'glob'
 import VirtualHtml from './pluginHtml'
