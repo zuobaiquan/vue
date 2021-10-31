@@ -42,7 +42,7 @@ export default {
       },
       // 测试vue2 响应式 盲区
       numbers: [1, 2, 3],
-      person: {},
+      person: {}
     })
     data.numbers[0] = 100
     data.person.name = 'zuobaiquan'
@@ -56,6 +56,7 @@ export default {
     //   console.log('oldVal', oldVal);
     //   document.title = 'update' + greeting.value;
     // });
+    // 监听多个，第一个参数可以是数组 
     // 监听 count 值 不能这么写[greeting, data.count] 提示 A watch source can only be a getter/effect function
     // 必须是 响应式对象 [greeting, () => data.count]
     watch([greeting, () => data.count], (newVal, oldVal) => {
@@ -73,8 +74,8 @@ export default {
     return {
       ...toRefs(data),
       greeting,
-      updateGreeting,
+      updateGreeting
     }
-  },
+  }
 }
 </script>
