@@ -56,7 +56,7 @@ export default {
     //   console.log('oldVal', oldVal);
     //   document.title = 'update' + greeting.value;
     // });
-    // 监听多个，第一个参数可以是数组 
+    // 监听多个，第一个参数可以是数组
     // 监听 count 值 不能这么写[greeting, data.count] 提示 A watch source can only be a getter/effect function
     // 必须是 响应式对象 [greeting, () => data.count]
     watch([greeting, () => data.count], (newVal, oldVal) => {
@@ -64,7 +64,7 @@ export default {
       console.log('oldVal', oldVal)
       document.title = 'update' + greeting.value
     })
-    //下面这种写法无法更新数据
+    // 下面这种写法无法更新数据
     // return {
     //   ...data
     // }

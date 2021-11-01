@@ -21,8 +21,8 @@ export default {
     return {
       count,
       increase,
-      double,
+      double
     }
-  },
+  }
 }
 </script>

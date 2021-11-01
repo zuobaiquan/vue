@@ -1,22 +1,29 @@
 # vue3study
 
+## Project setup
+```
+yarn install
+```
 
-// mapping vue2 -> vue3
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
 
-beforeCreate   ->  use setup
-created        ->  use setup
-beforeMount    ->  onBeforeMount
-mounted        ->  onMounted
-beforeUpdate   ->  onBeforeUpdate
-updated        ->  onUpdated
-beforeDestroy  ->  onBeforeUnmount
-destroyed      ->  onUnmounted
+### Compiles and minifies for production
+```
+yarn build
+```
 
-activated      ->  onActivated
-deactivated    ->  onDeactivated
-errorCaptured  ->  onErrorCaptured
+### Run your unit tests
+```
+yarn test:unit
+```
 
-vue3 added  调试，观察数据的变化
-onRenderTracked
-onRenderTriggered
+### Lints and fixes files
+```
+yarn lint
+```
 
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

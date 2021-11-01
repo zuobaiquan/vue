@@ -48,11 +48,11 @@ export default {
       },
       // 测试vue2 响应式 盲区
       numbers: [1, 2, 3],
-      person: {},
+      person: {}
     })
     data.numbers[0] = 100
     data.person.name = 'zuobaiquan'
-    //下面这种写法无法更新数据
+    // 下面这种写法无法更新数据
     // return {
     //   ...data
     // }
@@ -60,8 +60,8 @@ export default {
     // 响应式 toRefs
     // 可以将reactive()创建出来的响应式对象,转换为普通对象
     return {
-      ...toRefs(data),
+      ...toRefs(data)
     }
-  },
+  }
 }
 </script>

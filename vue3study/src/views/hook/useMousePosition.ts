@@ -1,5 +1,5 @@
 import { ref, onMounted, onUnmounted } from 'vue'
-function useMousePosition() {
+function useMousePosition () {
   const x = ref(0)
   const y = ref(0)
   const updateMouse = (e: MouseEvent) => {

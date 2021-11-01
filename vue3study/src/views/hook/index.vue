@@ -10,7 +10,7 @@ import useMousePosition from './useMousePosition'
 export default {
   name: 'Mouse',
   setup () {
-    const {x,y} = useMousePosition()
+    const { x, y } = useMousePosition()
     return {
       x,
       y

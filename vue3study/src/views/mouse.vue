@@ -13,15 +13,15 @@ export default {
   setup () {
     const x = ref(0)
     const y = ref(0)
-    const updateMouse = (e: MouseEvent)=>{
+    const updateMouse = (e: MouseEvent) => {
       x.value = e.pageX
       y.value = e.pageY
     }
     onMounted(() => {
-      document.addEventListener('click',updateMouse)
+      document.addEventListener('click', updateMouse)
     })
-    onUnmounted(()=>{
-      document.removeEventListener('click',updateMouse)
+    onUnmounted(() => {
+      document.removeEventListener('click', updateMouse)
     })
     return {
       x,
