@@ -1,0 +1,36 @@
+$thBody: #323232;
+$mainRed: #E44444;
+
+.home-wrapper {
+  .h5-img {
+    width: 100%;
+  }
+  .book-icon{
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background: url('@/assets/bookicon.png') no-repeat;
+    background-size: 100%;
+  }
+  .book-icon2{
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background: url('@/assets/book.png') no-repeat;
+    background-size: 100%;
+  }
+  .btn {
+    width: 6.7rem;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background: linear-gradient(90deg, #E44444 0%, #FF6932 100%);
+    border-radius: 0.4rem;
+    margin: 0 auto;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0.3rem;
+    left: 0.4rem
+  }
+}
