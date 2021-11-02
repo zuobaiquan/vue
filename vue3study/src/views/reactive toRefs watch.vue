@@ -47,10 +47,13 @@ export default {
     data.numbers[0] = 100
     data.person.name = 'zuobaiquan'
 
-    const greeting = ref('welcome...')
+    const greeting = ref('test')
     const updateGreeting = () => {
-      greeting.value += 'welcome!!!'
+      greeting.value += 'abs'
     }
+    watch(data, (val) => {
+      console.log('val', val.count)
+    })
     // watch(greeting, (newVal, oldVal) => {
     //   console.log('newVal', newVal);
     //   console.log('oldVal', oldVal);
