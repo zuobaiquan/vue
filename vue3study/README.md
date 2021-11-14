@@ -5,6 +5,8 @@
 全局 API 修改
 Vue.config -> app.config
 
+https://v3.vuejs.org/guide/migration/global-api.html
+
 全局注册api
 Vue.component  -> app.component
 Vue.directive  -> app.directive
