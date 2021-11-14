@@ -1,11 +1,17 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/ref computed.vue'
+import RefComputed from '../views/ref computed.vue'
+import Home from '../views/Home.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/ref',
+    name: 'RefComputed',
+    component: RefComputed
   },
   {
     path: '/reactive',
@@ -29,6 +35,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/hookmouse',
     name: 'hookmouse',
     component: () => import(/* webpackChunkName: "mouse" */ '../views/hook/index.vue')
+  },
+  {
+    path: '/defineComponent',
+    name: 'defineComponent',
+    component: () => import(/* webpackChunkName: "mouse" */ '../views/defineComponent.vue')
   }
 ]
 
