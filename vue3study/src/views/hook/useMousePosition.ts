@@ -7,6 +7,8 @@ function useMousePosition() {
     y: 0
   })
   const updateMouse = (e: MouseEvent) => {
+    // x.value = e.pageX
+    // y.value = e.pageY
     xy.x = e.pageX
     xy.y = e.pageY
   }
@@ -16,6 +18,9 @@ function useMousePosition() {
   onUnmounted(() => {
     document.removeEventListener('click', updateMouse)
   })
+  // return {
+  //   x, y
+  // }
   return toRefs(xy)
 }
 export default useMousePosition
