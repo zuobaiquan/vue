@@ -17,24 +17,28 @@
     <p>{{ person.name }}</p>
 
     <button @click="updateGreeting">{{ greeting }}1</button>
+    <p @click="changeObj">newObj：{{newObj}}</p>
   </div>
 </template>
 
 <script lang="ts">
-import { ref, computed, reactive, toRefs, watch } from 'vue'
+import { ref, computed, reactive, toRef, toRefs, watch } from 'vue'
 interface DataProps {
-  count: number;
-  double: number;
-  increase: () => void;
-  numbers: number[];
+  count: number
+  double: number
+  increase: () => void
+  numbers: number[]
   person: {
-    name?: string;
-  };
+    name?: string
+  }
 }
 export default {
   name: 'Reactive',
   setup () {
-    const data: DataProps = reactive({
+    // 当在setup，声明变量时，如果不加上ref或者reactive之后，变量是不会响应变化的
+    // 而toRefs是为了在输出，引入的时候更方便用解构而不破坏响应式
+
+    const data:DataProps = reactive({
       count: 0,
       double: computed(() => data.count * 2),
       increase: () => {
@@ -49,6 +53,7 @@ export default {
 
     const greeting = ref('test')
     const updateGreeting = () => {
+      data.count = 5555
       greeting.value += 'abs'
     }
     watch(data, (val) => {
@@ -72,12 +77,24 @@ export default {
     //   ...data
     // }
 
+    // toRef是将个对象 A 中的某个属性 x 转换为响应式数据，
+    // 其接收两个参数，第一个参数为对象 A，第二个参数为对象中的某个属性名 x。
+    const obj = { name: 'zuo', age: 12 }
+    const newObj = toRef(obj, 'name')
+    const changeObj = () => {
+      newObj.value = 'Tom'
+      console.log('newObj', newObj.value)
+      // newObj值会改变，但不更新UI
+    }
+
     // 响应式 toRefs
     // 可以将reactive()创建出来的响应式对象,转换为普通对象
     return {
       ...toRefs(data),
       greeting,
-      updateGreeting
+      updateGreeting,
+      newObj,
+      changeObj
     }
   }
 }

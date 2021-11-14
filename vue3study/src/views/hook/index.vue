@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <p>x：{{ x }}</p>
-    <p>y：{{ y }}</p>
+    pos:{{pos}}
   </div>
 </template>
 
@@ -10,10 +9,9 @@ import useMousePosition from './useMousePosition'
 export default {
   name: 'Mouse',
   setup () {
-    const { x, y } = useMousePosition()
+    const pos = useMousePosition()
     return {
-      x,
-      y
+      pos
     }
   }
 }
