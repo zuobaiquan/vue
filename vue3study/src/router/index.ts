@@ -1,12 +1,18 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import RefComputed from '../views/ref computed.vue'
 import Home from '../views/Home.vue'
+import Dropdown from '../views/dropdown.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/dropdown',
+    name: 'Dropdown',
+    component: Dropdown
   },
   {
     path: '/ref',
