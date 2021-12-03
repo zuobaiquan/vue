@@ -1,19 +1,21 @@
 <template>
   <div class="home">
-    <p>x：{{ x }}</p>
-    <p>y：{{ y }}</p>
+    pos:{{pos}}
+    apiObj:{{apiObj}}
   </div>
 </template>
 
 <script lang="ts">
 import useMousePosition from './useMousePosition'
+import useURLLoader from './useURLLoader'
 export default {
   name: 'Mouse',
   setup () {
-    const {x,y} = useMousePosition()
+    const pos = useMousePosition()
+    const apiObj = useURLLoader('/users/zuobaiquan/repos')
     return {
-      x,
-      y
+      apiObj,
+      pos
     }
   }
 }
