@@ -1,5 +1,5 @@
 let count = 1
-let plusCount = () => {
+const plusCount = () => {
   count++
 }
 module.exports = {
