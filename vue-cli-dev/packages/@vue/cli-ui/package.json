@@ -1,0 +1,138 @@
+{
+  "name": "@vue/cli-ui",
+  "version": "5.0.0-rc.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/vue-cli.git",
+    "directory": "packages/@vue/cli-ui"
+  },
+  "scripts": {
+    "serve": "cross-env VUE_APP_CLI_UI_URL=ws://localhost:4030/graphql VUE_APP_GRAPHQL_PORT=4030 vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint src apollo-server",
+    "apollo": "cross-env VUE_APP_CLI_UI_DEV=true VUE_APP_CLI_UI_DEBUG=true VUE_APP_GRAPHQL_PORT=4030 vue-cli-service apollo:dev",
+    "apollo:debug": "cross-env VUE_CLI_DEBUG=true yarn run apollo",
+    "apollo:start": "cross-env VUE_CLI_PLUGIN_DEV=true VUE_CLI_IPC=vue-cli-dev vue-cli-service apollo:start",
+    "apollo:start:test": "cross-env VUE_CLI_DEBUG=true VUE_CLI_UI_TEST=true VUE_APP_GRAPHQL_PORT=4040 VUE_APP_CLI_UI_URL=ws://localhost:4040/graphql VUE_CLI_IPC=vue-cli-test vue-cli-service apollo:dev --mode production",
+    "prepublishOnly": "yarn run lint --no-fix && yarn run build",
+    "test:e2e": "yarn run test:clear && start-server-and-test apollo:start:test http://localhost:4040/.well-known/apollo/server-health test:e2e:dev",
+    "test:start": "yarn run test:clear && start-server-and-test apollo:start:test http://localhost:4040/.well-known/apollo/server-health test:e2e:start",
+    "test:e2e:dev": "cross-env VUE_APP_CLI_UI_URL=ws://localhost:4040/graphql vue-cli-service test:e2e --mode development",
+    "test:e2e:start": "vue-cli-service test:e2e --mode production --browser chrome --headless --url=http://localhost:4040",
+    "test:clear": "rimraf ../../test/cli-ui-test && rimraf ./live-test",
+    "test": "yarn run build && cd ../cli-ui-addon-webpack && yarn run build && cd ../cli-ui-addon-widgets && yarn run build && cd ../cli-ui && yarn run test:start"
+  },
+  "files": [
+    "apollo-server",
+    "dist",
+    "locales",
+    "src",
+    "ui-defaults",
+    "ui-public",
+    "index.js",
+    "server.js",
+    "graphql-server.js"
+  ],
+  "dependencies": {
+    "@akryum/winattr": "^3.0.0",
+    "@vue/cli-shared-utils": "^5.0.0-rc.1",
+    "apollo-server-express": "^2.21.0",
+    "clone": "^2.1.1",
+    "deepmerge": "^4.2.2",
+    "express": "^4.17.1",
+    "express-history-api-fallback": "^2.2.1",
+    "fkill": "^7.1.0",
+    "fs-extra": "^9.1.0",
+    "globby": "^11.0.2",
+    "graphql": "^15.5.0",
+    "graphql-subscriptions": "^1.2.0",
+    "graphql-tag": "^2.10.3",
+    "graphql-type-json": "^0.3.1",
+    "javascript-stringify": "^2.0.1",
+    "js-yaml": "^4.0.0",
+    "lodash.merge": "^4.6.1",
+    "lowdb": "^1.0.0",
+    "lru-cache": "^6.0.0",
+    "node-ipc": "^9.1.1",
+    "node-notifier": "^10.0.0",
+    "parse-git-config": "^3.0.0",
+    "portfinder": "^1.0.26",
+    "prismjs": "^1.23.0",
+    "rss-parser": "^3.11.0",
+    "shortid": "^2.2.15",
+    "typescript": "~4.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "^5.0.0-rc.1",
+    "@vue/cli-plugin-e2e-cypress": "^5.0.0-rc.1",
+    "@vue/cli-plugin-eslint": "^5.0.0-rc.1",
+    "@vue/cli-service": "^5.0.0-rc.1",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "@vue/ui": "^0.12.2",
+    "ansi_up": "^5.0.0",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "chokidar": "^3.5.2",
+    "core-js": "^3.8.3",
+    "cross-env": "^7.0.3",
+    "date-fns": "^2.17.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-graphql": "^4.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "lint-staged": "^11.1.2",
+    "lodash.debounce": "^4.0.8",
+    "portal-vue": "^2.1.7",
+    "rimraf": "^3.0.2",
+    "start-server-and-test": "^1.12.0",
+    "stylus": "^0.55.0",
+    "stylus-loader": "^6.1.0",
+    "subscriptions-transport-ws": "^0.9.18",
+    "validate-npm-package-name": "^3.0.0",
+    "vue": "^2.6.14",
+    "vue-apollo": "^3.0.7",
+    "vue-cli-plugin-apollo": "^0.22.2",
+    "vue-color": "^2.8.1",
+    "vue-i18n": "^8.22.4",
+    "vue-instantsearch": "^1.5.1",
+    "vue-meta": "^2.4.0",
+    "vue-observe-visibility": "^1.0.0",
+    "vue-router": "^3.5.1",
+    "vue-template-compiler": "^2.6.14",
+    "vue-timeago": "^5.1.3",
+    "vue-virtual-scroller": "^1.0.10",
+    "xterm": "~4.10.0",
+    "xterm-addon-fit": "^0.5.0",
+    "xterm-addon-web-links": "^0.4.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Guillaume Chau",
+  "engines": {
+    "node": "^12.0.0 || >= 14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "vue-cli-service lint"
+  },
+  "vuePlugins": {
+    "ui": [
+      "ui-dev.js"
+    ]
+  }
+}
