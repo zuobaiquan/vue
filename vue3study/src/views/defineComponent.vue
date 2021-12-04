@@ -11,10 +11,10 @@
 import { defineComponent } from 'vue'
 const component =
  defineComponent({
-   name: 'HelloWorld',
+   name: 'Index',
    props: {
      msg: {
-       required: true,
+       required: false,
        type: String
      }
    },

@@ -15,19 +15,14 @@ import DropdownItem from '../components/DropdownItem/index.vue'
 import { defineComponent } from 'vue'
 export default
 defineComponent({
-  name: 'HelloWorld',
+  name: 'DropdownTest',
   components: {
     Dropdown,
     DropdownItem
   },
   props: {
-    msg: {
-      required: true,
-      type: String
-    }
   },
   setup(props, context) {
-    console.log(props.msg)
     // context.attrs
     // context.slots
     // context.emit
