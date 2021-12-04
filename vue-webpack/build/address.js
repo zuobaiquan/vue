@@ -1,0 +1,5 @@
+const address = require('address')
+const defaultGateway = require('default-gateway')
+const result = defaultGateway.v4.sync()
+lanUrlForConfig = address.ip(result && result.interface)
+console.log('lanUrlForConfig', lanUrlForConfig)
