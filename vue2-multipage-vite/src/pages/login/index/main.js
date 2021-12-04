@@ -1,7 +1,9 @@
-import Vue from "vue";
-import App from "./App";
+import Vue from 'vue'
+
+import App from './App'
+
 new Vue({
-  el: "#login",
-  template: "<App/>",
-  components: { App }
-});
+  el: '#login',
+  components: { App },
+  template: '<App/>'
+})
