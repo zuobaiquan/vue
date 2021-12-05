@@ -40,12 +40,17 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/hookmouse',
     name: 'hookmouse',
-    component: () => import(/* webpackChunkName: "mouse" */ '../views/hook/index.vue')
+    component: () => import(/* webpackChunkName: "mouse" */ '../hooks/index.vue')
   },
   {
     path: '/defineComponent',
     name: 'defineComponent',
     component: () => import(/* webpackChunkName: "mouse" */ '../views/defineComponent.vue')
+  },
+  {
+    path: '/form',
+    name: 'form',
+    component: () => import(/* webpackChunkName: "mouse" */ '../views/Form/index.vue')
   }
 ]
 
