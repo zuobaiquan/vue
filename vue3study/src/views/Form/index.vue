@@ -45,25 +45,6 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
-.form-box{
-  &>div{
-    position: relative;
-    display: flex;
-    margin:30px 0;
-    label{
-      width: 100px;
-    }
-    input{
-      flex:1;
-    }
-    p{
-      position: absolute;
-      bottom: -30px;
-      left: 100px;
-      font-size:12px;
-      color:red;
-    }
-  }
-}
+<style lang="scss" scoped>
+
 </style>

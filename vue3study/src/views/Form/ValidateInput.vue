@@ -73,26 +73,6 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
-  .form-item{
-    position: relative;
-    display: flex;
-    margin:30px 0;
-    &.is-error{
-      input{
-        border-color:red;
-      }
-    }
-    input{
-      flex:1;
-    }
-    p{
-      position: absolute;
-      bottom: -30px;
-      left: 100px;
-      font-size:12px;
-      color:red;
-    }
-  }
+<style lang="scss" scoped>
 
 </style>
