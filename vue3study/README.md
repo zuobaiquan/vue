@@ -7,6 +7,8 @@ Vue.config -> app.config
 
 https://v3.vuejs.org/guide/migration/global-api.html
 
+https://v5.bootcss.com/docs/forms/form-control/
+
 全局注册api
 Vue.component  -> app.component
 Vue.directive  -> app.directive
@@ -79,5 +81,3 @@ Vue2 这样写在一定程度上修改了 Vue 对象的全局状态。
 
 
 ```
-
-

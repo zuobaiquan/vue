@@ -11,9 +11,9 @@
   验证未通过
   出现具体的警告
 -->
-  <div class="form-item" :class="{'is-error':inputRef.error}">
-    <input :value="inputRef.val" @blur="validateInput" @input="updateValue" type="text" />
-    <p v-if="inputRef.error">{{inputRef.message}}</p>
+  <div>
+    <input class="form-control" :class="{'is-invalid':inputRef.error}" :value="inputRef.val" @blur="validateInput" @input="updateValue" type="text" />
+    <p class="invalid-feedback" v-if="inputRef.error">{{inputRef.message}}</p>
   </div>
 </template>
 

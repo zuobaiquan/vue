@@ -11,15 +11,13 @@
   验证未通过
   出现具体的警告
 -->
-  <div>
-
-    <div class="form-box">
-      <label>邮箱地址</label>
-      <ValidateInput :rules="emailRules"  v-model="emailVal"/>
-      {{emailVal}}
+  <div class="container">
+    <div class="mb-3">
+      <label class="form-label">邮箱地址</label>
+      <ValidateInput :rules="emailRules" v-model="emailVal"/>
     </div>
-    <div class="form-box">
-      <label>密码</label>
+    <div class="mb-3">
+      <label class="form-label">密码</label>
       <input type="password" />
     </div>
   </div>
