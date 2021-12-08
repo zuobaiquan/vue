@@ -12,7 +12,7 @@
   出现具体的警告
 -->
   <div>
-    <input class="form-control" :class="{'is-invalid':inputRef.error}" :value="inputRef.val" @blur="validateInput" @input="updateValue" type="text" />
+    <input v-bind="$attrs" class="form-control" :class="{'is-invalid':inputRef.error}" :value="inputRef.val" @blur="validateInput" @input="updateValue" />
     <p class="invalid-feedback" v-if="inputRef.error">{{inputRef.message}}</p>
   </div>
 </template>
@@ -26,6 +26,7 @@ interface RuleProps {
 }
 export type RulesProps = RuleProps[]
 export default defineComponent({
+  inheritAttrs: false,
   props: {
     // 通过 PropType 指定构造函数的类型
     rules: Array as PropType<RulesProps>,
@@ -62,7 +63,9 @@ export default defineComponent({
           return passed
         })
         inputRef.error = !allPassed
+        return allPassed
       }
+      return true
     }
     return {
       inputRef,

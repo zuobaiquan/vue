@@ -12,34 +12,53 @@
   出现具体的警告
 -->
   <div class="container">
-    <div class="mb-3">
-      <label class="form-label">邮箱地址</label>
-      <ValidateInput :rules="emailRules" v-model="emailVal"/>
-    </div>
-    <div class="mb-3">
-      <label class="form-label">密码</label>
-      <input type="password" />
-    </div>
+    <ValidateForm @form-submit="onFormSubmit">
+      <div class="mb-3">
+        <label class="form-label">邮箱地址</label>
+        <ValidateInput type="text" placeholder="请输入邮箱" :rules="emailRules" v-model="emailVal"/>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">密码</label>
+        <ValidateInput type="password" placeholder="请输入密码" :rules="passwordRules" v-model="passwordVal"/>
+      </div>
+      <!-- <template v-slot:submit> -->
+      <template #submit>
+        <span class="btn btn-danger">提交</span>
+      </template>
+    </ValidateForm>
   </div>
 </template>
 
 <script lang="ts">
+import ValidateForm from './ValidateForm.vue'
 import ValidateInput, { RulesProps } from './ValidateInput.vue'
 import { defineComponent, ref } from 'vue'
 export default defineComponent({
   components: {
+    ValidateForm,
     ValidateInput
   },
   setup() {
     const emailVal = ref('zuo')
+    const passwordVal = ref('')
     const emailRules:RulesProps = [
       { type: 'require', message: '请输入邮箱' },
       { type: 'email', message: '邮箱地址不合法' }
     ]
+    const passwordRules:RulesProps = [
+      { type: 'require', message: '请输入密码' }
+    ]
+
+    const onFormSubmit = (result:boolean) => {
+      console.log('result', result)
+    }
 
     return {
       emailRules,
-      emailVal
+      emailVal,
+      passwordVal,
+      passwordRules,
+      onFormSubmit
     }
   }
 })
