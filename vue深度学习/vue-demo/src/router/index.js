@@ -24,6 +24,14 @@ export default new Router({
     {
       path: '/nextTick',
       component: () => import('@/views/NextTick')
+    },
+    {
+      path: '/attrs',
+      component: () => import('@/views/$attrs/index')
+    },
+    {
+      path: '/eventbus',
+      component: () => import('@/views/EventBus/index')
     }
   ]
 })
