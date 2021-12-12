@@ -39,7 +39,7 @@ export default defineComponent({
     ValidateInput
   },
   setup() {
-    const inputRef = ref<null | HTMLElement>(null)
+    const inputRef = ref<any>()
     const emailVal = ref('zuo')
     const passwordVal = ref('')
     const emailRules:RulesProps = [
@@ -50,8 +50,8 @@ export default defineComponent({
       { type: 'require', message: '请输入密码' }
     ]
 
-    const onFormSubmit = (data:boolean) => {
-      console.log('inputRef', data)
+    const onFormSubmit = () => {
+      console.log('inputRef', inputRef.value.validateInput())
     }
 
     return {
