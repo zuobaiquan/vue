@@ -3,6 +3,7 @@
     <button @click="openModal">Open Modal</button><br/>
     <modal :isOpen="modalIsOpen" @close="onModalClose"> My Modal !!!!</modal>
   </div>
+  <p>122</p>
 </template>
 
 <script lang="ts">

@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import RefComputed from '../views/ref computed.vue'
-import Home from '../views/Home.vue'
+import Home from '../views/home.vue'
 import Dropdown from '../views/dropdown.vue'
 import GetCurrentInstance from '../views/getCurrentInstance globalProperties.vue'
 

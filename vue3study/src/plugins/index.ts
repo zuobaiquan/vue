@@ -1,6 +1,6 @@
 const showTime = () => console.log(new Date())
 export default {
-  install(app:any) {
+  install(app: any) {
     // 原型绑定 属性或方法
     app.config.globalProperties.showText = 'showText'
     app.config.globalProperties.formatTime = showTime
