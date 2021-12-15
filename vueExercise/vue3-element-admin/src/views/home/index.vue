@@ -3,11 +3,18 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, getCurrentInstance } from 'vue'
 
 export default defineComponent({
   name: 'home',
-  setup() {},
+  setup() {
+    const { proxy: ctx } = getCurrentInstance()
+    console.log('ctx', ctx)
+    ctx.$message.success({
+      message: '提示',
+      duration: 3000,
+    })
+  },
 })
 </script>
 

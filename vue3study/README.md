@@ -6,6 +6,8 @@ Composition API
 全新的全家桶
 新的ts支持
 vite
+组件不再强制单个根元素  Fragment，template 支持多个根标签
+teleport（传送）
 
 
 文档：https://v3.cn.vuejs.org/guide/introduction.html
@@ -86,23 +88,12 @@ Vue2 这样写在一定程度上修改了 Vue 对象的全局状态。
 第一，在单元测试中，全局配置非常容易污染全局环境，用户需要在每次 case 之间，保存和恢复配置。有一些 api （vue use vue mixin）甚至没有方法恢复配置，这就让一些插件的测试非常的困难。
 第二，在不同的 APP 中，如果想共享一份有不同配置的 vue 对象，也变得非常困难。
 
-template 支持多个根标签
-<template>
-  <p>111</p>
-  <div>111</div>
-</template>
-
 
 ```
 vue2 中的
 Options API ，又叫选项 API
 以vue为后缀的文件，通过定义methods，computed，watch，data等属性与方法，共同处理页面逻辑
 
-优缺点
-条例清晰，相同的放在相同的地方;
-但随着组件功能的增大，关联性会大大降低，组件的阅读和理解难度会增加;
-调用使用this，但逻辑过多时this会出现问题，比如指向不明等;
-其本身并不是有效的js代码 我们在使用options API 的时候，需要确切了解我们具体可以访问到哪些属性，以及我们访问到的当前属性的行为在后台，VUE需要将此属性转换为工作代码，因为我们无法从自动建议和类型检查中受益，因此给我们在使用相关属性时，造成了一定弊端
 
 vue3 中的
 Composition API 又叫组合式API
@@ -115,13 +106,12 @@ Composition API 又叫组合式API
 
 其代码更易读，更易理解和学习，没有任何幕后操作
 Composition API的好处不仅仅是以不同的方式进行编码，更重要的是对于代码的重用
-不受模板和组件范围的限制，也可以准确的知道我们可以使用哪些属性
-由于幕后没有什么操作，所以编辑器可以帮助我们进行类型检查和建议
+不受模板和组件范围的限制
 
 
 比较：
 在逻辑组织和逻辑复用方面，Composition API是优于Options API
-因为Composition API几乎是函数，会有更好的类型推断。
+因为Composition API 几乎是函数，会有更好的类型推断。
 Composition API对 tree-shaking 友好，代码也更容易压缩
-Composition API中没有对this的使用，减少了this指向不明的情况
-如果是小型组件，可以继续使用Options API，也是十分友好的
+Composition API中没有对 this 的使用，减少了this指向不明的情况
+如果是小型组件，可以继续使用Options API
