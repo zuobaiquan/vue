@@ -5,6 +5,7 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 var { srcPath, resolve } = require('./util')
 var config = require('../config')
+const HelloWorldPlugins = require('./HelloWorldPlugins')
 
 module.exports = {
   entry: {
@@ -41,7 +42,8 @@ module.exports = {
       format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
       clear: false
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new HelloWorldPlugins()
   ],
   optimization: {
     // splitChunks: {
