@@ -8,6 +8,8 @@ Composition API
 vite
 组件不再强制单个根元素  Fragment，template 支持多个根标签
 teleport（传送）
+移除过滤器filters
+组件支持多个v-model
 
 
 文档：https://v3.cn.vuejs.org/guide/introduction.html
