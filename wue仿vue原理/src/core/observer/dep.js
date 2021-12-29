@@ -1,7 +1,3 @@
-/**
- * @author monkeywang
- * Date: 2018/4/8
- */
 export default class Dep {
   constructor () {
     this.sub = []

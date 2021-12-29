@@ -1,7 +1,3 @@
-/**
- * @author monkeywang
- * Date: 2018/4/4
- */
 module.exports = {
   module: {
     rules: [

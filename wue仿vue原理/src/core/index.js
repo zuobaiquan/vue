@@ -1,8 +1,3 @@
-/**
- * @author monkeywang
- * Date: 2018/4/8
- */
-
 import proxy from './instance/proxy'
 import initOptions from './instance/init'
 import Compiler from "./compile";
