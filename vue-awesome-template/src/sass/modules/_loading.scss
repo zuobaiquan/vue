@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.c-Loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999999999;
+
+  display: block;
+  margin: auto;
+
+  text-align: center;
+
+  transition: 0.3s;
+  @at-root #{&}-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    color: #333;
+    font-size: rem(28px);
+
+    transform: translate3d(-50%, -50%, 0);
+  }
+  @at-root #{&}.has-bg {
+    @include bg-alpha();
+  }
+  @at-root #{&}.is-hided {
+    display: none;
+  }
+}

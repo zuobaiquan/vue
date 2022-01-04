@@ -1,0 +1,105 @@
+/**
+ * @author GuangHui
+ * @description 移动端变量
+ */
+@charset "UTF-8";
+
+// ------------------------------------------
+// * 开关
+// ------------------------------------------
+$lte7: false; //是否兼容ie6-7
+$ie-filter: false; //是否为ie6-8开启css3滤镜兼容，常用于渐变背景
+
+// ------------------------------------------
+// * 其它
+// ------------------------------------------
+$ui-width: 750px; // 设计图尺寸，用于rem()和设置html的字体大小
+
+// ------------------------------------------
+// * 主题色
+// ------------------------------------------
+$theme-primary: gen-var(theme-primary, $blue-6);
+$theme-primary-light: gen-var(theme-primary-light, $blue-5);
+$theme-primary-darken: gen-var(theme-primary-light, $blue-7);
+
+// ------------------------------------------
+// * 主题色补色
+// ------------------------------------------
+$theme-contrast: gen-var(theme-contrast, $yellow-6);
+$theme-contrast-light: gen-var(theme-contrast, $yellow-5);
+$theme-contrast-darken: gen-var(theme-contrast, $yellow-7);
+
+// ------------------------------------------
+// * 功能色
+// ------------------------------------------
+$theme-success: gen-var(theme-success, $green-6);
+$theme-info: gen-var(theme-info, $cyan-6);
+$theme-warning: gen-var(theme-warning, $yellow-6);
+$theme-danger: gen-var(theme-danger, $red-6);
+
+$theme-light: gen-var(theme-light, $gray-5);
+$theme-dark: gen-var(theme-dark, $gray-9);
+
+// ------------------------------------------
+// * 文本颜色
+// ------------------------------------------
+$text-color-primary: gen-var(text-color-primary, $gray-10);
+$text-color-regular: gen-var(text-color-regular, $gray-9);
+$text-color-secondary: gen-var(text-color-secondary, $gray-8);
+$text-color-placeholder: gen-var(text-color-placeholder, $gray-7);
+
+// ------------------------------------------
+// * 文本大小
+// ------------------------------------------
+$text-size-base: gen-var(text-size-base, $font-size-base);
+$text-size-small: gen-var(text-size-small, $font-size-small);
+$text-size-tiny: gen-var(text-size-tiny, $font-size-tiny);
+$text-size-large: gen-var(text-size-large, $font-size-large);
+$text-size-huge: gen-var(text-size-huge, $font-size-huge);
+
+// ------------------------------------------
+// * 字体栈
+// ------------------------------------------
+$font-sans-serif: gen-var(font-sans-serif, $font-family-sans-serif);
+$font-monospace: gen-var(font-monospace, $font-family-monospace);
+
+// ------------------------------------------
+// * 边框
+// ------------------------------------------
+$border-color: gen-var(border-color, $gray-5);
+
+// ------------------------------------------
+// ! 移动端利用rem重置基础space
+// ------------------------------------------
+$space-base: rem(16px);
+
+// ------------------------------------------
+// * gutter
+// ------------------------------------------
+$gutter-base: gen-var(gutter-base, $space-base);
+$gutter-tiny: gen-var(gutter-tiny, $space-tiny);
+$gutter-small: gen-var(gutter-small, $space-small);
+$gutter-large: gen-var(gutter-large, $space-large);
+$gutter-huge: gen-var(gutter-huge, $space-huge);
+
+// ------------------------------------------
+// * 背景
+// ------------------------------------------
+$bg: gen-var(bg, $white);
+
+// ------------------------------------------
+// * 下面是每个模块的变量
+// ------------------------------------------
+
+// ------------------------------------------
+// * 按钮
+// ------------------------------------------
+$btn-color-primary: gen-var(btn-color-primary, $theme-primary);
+$btn-color-primary-hover: gen-var(
+  btn-color-primary-hover,
+  $theme-primary-light
+);
+$btn-color-primary-active: gen-var(
+  btn-color-primary-hover,
+  $theme-primary-darken
+);

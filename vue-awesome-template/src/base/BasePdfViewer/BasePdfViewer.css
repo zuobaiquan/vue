@@ -1,0 +1,67 @@
+.c-BasePdfViewer {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  font-size: 16px;
+}
+
+.c-BasePdfViewer-hd {
+  flex: 0 0 auto;
+}
+
+.c-BasePdfViewer-main {
+  position: relative;
+  z-index: 1;
+
+  flex: 1 1 auto;
+  height: 100%;
+
+  padding: 10px;
+  overflow: hidden;
+
+  will-change: scroll-position;
+  scroll-behavior: smooth;
+}
+
+.c-BasePdfViewer-tips {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.c-BasePdfViewer-opt {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.c-PDFViewerWp {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-PDFViewerWp.grab-to-pan-grab {
+  cursor: grab;
+}
+
+.c-PDFViewer .page {
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #fff;
+
+  will-change: width, height;
+}
+
+.c-PDFViewer .page + .page {
+  margin-top: 10px;
+}

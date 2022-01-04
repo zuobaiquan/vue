@@ -1,0 +1,45 @@
+@charset "UTF-8";
+// 通用助手样式
+
+.u-tal {
+  text-align: left !important;
+}
+
+.u-tac {
+  text-align: center !important;
+}
+
+.u-tar {
+  text-align: right !important;
+}
+
+.u-rtl {
+  direction: rtl !important;
+}
+
+.u-wrap {
+  @extend %text-wrap;
+}
+
+.u-primary {
+  color: $theme-primary !important;
+}
+
+.u-contrast {
+  color: $theme-contrast !important;
+}
+
+.u-success {
+  color: $theme-success !important;
+}
+.u-warn {
+  color: $theme-warning !important;
+}
+
+.u-danger {
+  color: $theme-danger !important;
+}
+
+.u-info {
+  color: $theme-info !important;
+}

@@ -1,0 +1,26 @@
+{
+  "editor.formatOnSave": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.printWidth": 80,
+
+  "vetur.format.enable": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+
+  "eslint.format.enable": false,
+  "eslint.alwaysShowStatus": true,
+
+  "stylelint.validate": ["css", "scss", "vue"], // stylelint1.x默认只lint css、postcss文件，需添加vue支持
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}
