@@ -5,6 +5,7 @@ import bargraph from '@/views/bargraph/index'
 import vueset1 from '@/views/vue-set/index01'
 import vueset2 from '@/views/vue-set/index02'
 import print from '@/views/print'
+import Slot from '@/views/slot/parent'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +29,12 @@ export default new Router({
       path: '/print',
       name: 'print',
       component: print
+    },
+    {
+      path: '/slot',
+      name: 'slot',
+      component: Slot
+      
     }
   ]
 })
