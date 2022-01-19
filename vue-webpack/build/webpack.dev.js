@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpackMerge = require('webpack-merge')
 const webpackBase = require('./webpack.base')
 var { srcPath, getNetworkIp } = require('./util')
+const AliasConfig = require('./plugins/aliasConfig')
 
 module.exports = webpackMerge(webpackBase, {
   mode: 'development',
@@ -81,6 +82,7 @@ module.exports = webpackMerge(webpackBase, {
       template: 'index.html',
       inject: true
       // favicon: "favicon.ico",
-    })
+    }),
+    new AliasConfig()
   ]
 })

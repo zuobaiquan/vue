@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { formatNum } from '@/utils/util'
 
 export default {
   data() {
@@ -18,18 +19,19 @@ export default {
   watch: {
   },
   mounted() {
-    const a = [1, 2, 3].includes(1)
-    this.a = a
+    console.log(111, formatNum(1))
+    // const a = [1, 2, 3].includes(1)
+    // this.a = a
 
-    const sum = (a, b) => a + b
+    // const sum = (a, b) => a + b
 
-    // 新的 API
-    Promise.resolve(100).then(data => data);
+    // // 新的 API
+    // Promise.resolve(100).then(data => data);
 
-    // 新的 API
-    [10, 20, 30].includes(20)
+    // // 新的 API
+    // [10, 20, 30].includes(20)
 
-    this.b = sum(1, 5)
+    // this.b = sum(1, 5)
   },
   destroyed() {
   },

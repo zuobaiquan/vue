@@ -5,7 +5,7 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 var { srcPath, resolve } = require('./util')
 var config = require('../config')
-const HelloWorldPlugins = require('./HelloWorldPlugins')
+const HelloWorldPlugins = require('./plugins/HelloWorldPlugins')
 
 module.exports = {
   entry: {
