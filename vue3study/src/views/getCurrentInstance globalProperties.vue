@@ -5,6 +5,7 @@
 </template>
 
 <script lang="ts">
+import { useRoute, useRouter } from 'vue-router'
 import { defineComponent, getCurrentInstance, ComponentInternalInstance } from 'vue'
 export default defineComponent({
   components: {
@@ -19,6 +20,16 @@ export default defineComponent({
     console.log('ctx', ctx?.$myProperty)
     console.log('ctx', ctx?.showText)
     console.log(ctx?.formatPhone('13500000001'))
+
+    console.log(123456,ctx?.$router)
+    // setup 函数里如何拿到 vue-router 的$router，$route
+    // 拿到  $router
+    const $router2 = useRouter()
+    console.log('$router',$router2)
+
+    const $route3 = useRoute()
+    console.log('$route3',$route3.query)
+
   }
 })
 </script>

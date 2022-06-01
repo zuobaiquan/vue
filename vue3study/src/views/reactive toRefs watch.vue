@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { ref, computed, reactive, toRef, toRefs, watch } from 'vue'
+import { ref, computed, reactive, toRef, toRefs, watch, watchEffect } from 'vue'
 interface DataProps {
   count: number
   double: number
@@ -57,7 +57,13 @@ export default {
       greeting.value += 'abs'
     }
     watch(data, (val) => {
-      console.log('val', val.count)
+      console.log('val11', val.count)
+    })
+    // watch 只能监听响应性数据 reactive 和 ref 定义的值，若要监听一个单一的值，需要传递相应值的 getter 函数  (类似 () => data.count)
+    // watchEffect 不能监听 reactive 和 ref 定义的值，只能监听其对应的具体的值(响应单一的值)
+    watchEffect(() => {
+      console.log('watchEffect 执行了')
+      // console.log('data123456', data.count, greeting)
     })
     // watch(greeting, (newVal, oldVal) => {
     //   console.log('newVal', newVal);
