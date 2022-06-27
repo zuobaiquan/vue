@@ -63,7 +63,8 @@ export default {
     // watchEffect 不能监听 reactive 和 ref 定义的值，只能监听其对应的具体的值(响应单一的值)
     watchEffect(() => {
       console.log('watchEffect 执行了')
-      // console.log('data123456', data.count, greeting)
+      // console.log('data123456', data.count)
+      console.log('data123456', greeting.value)
     })
     // watch(greeting, (newVal, oldVal) => {
     //   console.log('newVal', newVal);
@@ -73,6 +74,7 @@ export default {
     // 监听多个，第一个参数可以是数组
     // 监听 count 值 不能这么写[greeting, data.count] 提示 A watch source can only be a getter/effect function
     // 必须是 响应式对象 [greeting, () => data.count]
+    // https://blog.51cto.com/u_15302032/5323971
     watch([greeting, () => data.count], (newVal, oldVal) => {
       console.log('newVal', newVal)
       console.log('oldVal', oldVal)
