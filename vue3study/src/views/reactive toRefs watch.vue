@@ -75,6 +75,13 @@ export default {
     // 监听 count 值 不能这么写[greeting, data.count] 提示 A watch source can only be a getter/effect function
     // 必须是 响应式对象 [greeting, () => data.count]
     // https://blog.51cto.com/u_15302032/5323971
+    // watch 深度监听，立即执行
+    // watch(() => obj.brand,() => {
+    //   console.log('监听的obj.brand.name改变了')
+    // },{
+    //   deep:true,
+    //   immediate:true,
+    // })
     watch([greeting, () => data.count], (newVal, oldVal) => {
       console.log('newVal', newVal)
       console.log('oldVal', oldVal)
