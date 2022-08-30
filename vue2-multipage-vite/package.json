@@ -34,7 +34,7 @@
     "flow-bin": "^0.162.0",
     "glob": "^7.2.0",
     "sass": "^1.42.1",
-    "vite": "^2.6.4",
+    "vite": "^2.9.13",
     "vite-plugin-vue2": "^1.8.2",
     "vue-template-compiler": "^2.6.14"
   },
